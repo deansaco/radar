@@ -1,0 +1,14 @@
+[0.015s] Invoking command in '/home/offroad/radar_ws/build/radar_conti_ars408': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/radar_conti_ars408:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12
+[0.055s] [35m[1mScanning dependencies of target talker[0m
+[0.072s] [ 25%] Built target listener
+[0.077s] [ 50%] Built target radar_conti_ars408_component
+[0.082s] [ 62%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[0.110s] [ 87%] Built target radar_conti_ars408_composition
+[0.183s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/publisher_member_function.cpp:21:10:[m[K [01;31m[Kfatal error: [m[Kradar_conti_ars408_msgs/msg/clustergeneral.hpp: No such file or directory
+[0.183s]    21 | #include [01;31m[K"radar_conti_ars408_msgs/msg/clustergeneral.hpp"[m[K
+[0.183s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.183s] compilation terminated.
+[0.185s] make[2]: *** [CMakeFiles/talker.dir/build.make:63: CMakeFiles/talker.dir/src/publisher_member_function.cpp.o] Error 1
+[0.185s] make[1]: *** [CMakeFiles/Makefile2:111: CMakeFiles/talker.dir/all] Error 2
+[0.185s] make: *** [Makefile:141: all] Error 2
+[0.187s] Invoked command in '/home/offroad/radar_ws/build/radar_conti_ars408' returned '2': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/radar_conti_ars408:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12

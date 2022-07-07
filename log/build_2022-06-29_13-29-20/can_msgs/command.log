@@ -1,0 +1,6 @@
+Invoking command in '/home/offroad/radar_ws/build/can_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/install/can_msgs
+Invoked command in '/home/offroad/radar_ws/build/can_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/install/can_msgs
+Invoking command in '/home/offroad/radar_ws/build/can_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/can_msgs -- -j12 -l12
+Invoked command in '/home/offroad/radar_ws/build/can_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/can_msgs -- -j12 -l12
+Invoking command in '/home/offroad/radar_ws/build/can_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/build/can_msgs
+Invoked command in '/home/offroad/radar_ws/build/can_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/build/can_msgs

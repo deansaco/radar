@@ -1,0 +1,78 @@
+[0.000000] (-) TimerEvent: {}
+[0.000424] (-) JobUnselected: {'identifier': 'can_msgs'}
+[0.000580] (-) JobUnselected: {'identifier': 'radar_conti_ars408_msgs'}
+[0.000733] (-) JobUnselected: {'identifier': 'ros2socketcan_bridge'}
+[0.001564] (radar_conti_ars408) JobQueued: {'identifier': 'radar_conti_ars408', 'dependencies': OrderedDict([('can_msgs', '/home/offroad/radar_ws/install/can_msgs'), ('radar_conti_ars408_msgs', '/home/offroad/radar_ws/install/radar_conti_ars408_msgs'), ('ros2socketcan_bridge', '/home/offroad/radar_ws/install/ros2socketcan_bridge')])}
+[0.001626] (radar_conti_ars408) JobStarted: {'identifier': 'radar_conti_ars408'}
+[0.015312] (radar_conti_ars408) JobProgress: {'identifier': 'radar_conti_ars408', 'progress': 'cmake'}
+[0.016023] (radar_conti_ars408) JobProgress: {'identifier': 'radar_conti_ars408', 'progress': 'build'}
+[0.016848] (radar_conti_ars408) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/offroad/radar_ws/build/radar_conti_ars408', '--', '-j12', '-l12'], 'cwd': '/home/offroad/radar_ws/build/radar_conti_ars408', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'offroad'), ('SSH_AGENT_PID', '2378'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/offroad'), ('OLDPWD', '/home/offroad/radar_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1805'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17474'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/offroad/radar_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'offroad'), ('JOURNAL_STREAM', '8:45999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'offroad'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/offroad-dean:@/tmp/.ICE-unix/2417,unix/offroad-dean:/tmp/.ICE-unix/2417'), ('INVOCATION_ID', '1da356c3c0f34733b9de89bfeacda762'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:feb3b02c-0c47-413e-acf0-ec443685c300'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/offroad/radar_ws/build/radar_conti_ars408'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/install/can_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_pubsub')]), 'shell': False}
+[0.073614] (radar_conti_ars408) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.092128] (radar_conti_ars408) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.100022] (-) TimerEvent: {}
+[0.200274] (-) TimerEvent: {}
+[0.248658] (radar_conti_ars408) StdoutLine: {'line': b'-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)\n'}
+[0.251446] (radar_conti_ars408) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.267375] (radar_conti_ars408) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.270128] (radar_conti_ars408) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.300370] (-) TimerEvent: {}
+[0.369259] (radar_conti_ars408) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.390902] (radar_conti_ars408) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)\n'}
+[0.400504] (-) TimerEvent: {}
+[0.496043] (radar_conti_ars408) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.500602] (-) TimerEvent: {}
+[0.529111] (radar_conti_ars408) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.530364] (radar_conti_ars408) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600713] (-) TimerEvent: {}
+[0.657371] (radar_conti_ars408) StdoutLine: {'line': b'-- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)\n'}
+[0.700822] (-) TimerEvent: {}
+[0.711852] (radar_conti_ars408) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 2.4.1 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)\n'}
+[0.740444] (radar_conti_ars408) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.771495] (radar_conti_ars408) StdoutLine: {'line': b'-- Found can_msgs: 0.0.0 (/home/offroad/radar_ws/install/can_msgs/share/can_msgs/cmake)\n'}
+[0.800928] (-) TimerEvent: {}
+[0.831645] (radar_conti_ars408) StdoutLine: {'line': b'-- Found radar_conti_ars408_msgs: 0.0.0 (/home/offroad/radar_ws/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/cmake)\n'}
+[0.860808] (radar_conti_ars408) StdoutLine: {'line': b'-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)\n'}
+[0.901038] (-) TimerEvent: {}
+[0.926898] (radar_conti_ars408) StdoutLine: {'line': b'-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)\n'}
+[1.001170] (-) TimerEvent: {}
+[1.101536] (-) TimerEvent: {}
+[1.201766] (-) TimerEvent: {}
+[1.302039] (-) TimerEvent: {}
+[1.402320] (-) TimerEvent: {}
+[1.502598] (-) TimerEvent: {}
+[1.565338] (radar_conti_ars408) StdoutLine: {'line': b'-- Found ros2socketcan_bridge: 0.0.0 (/home/offroad/radar_ws/install/ros2socketcan_bridge/share/ros2socketcan_bridge/cmake)\n'}
+[1.602714] (-) TimerEvent: {}
+[1.626761] (radar_conti_ars408) StderrLine: {'line': b"Error parsing '/home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml':\n"}
+[1.702826] (-) TimerEvent: {}
+[1.719725] (radar_conti_ars408) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[1.719880] (radar_conti_ars408) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>\n'}
+[1.719952] (radar_conti_ars408) StderrLine: {'line': b'    main()\n'}
+[1.720012] (radar_conti_ars408) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main\n'}
+[1.720070] (radar_conti_ars408) StderrLine: {'line': b'    raise e\n'}
+[1.720127] (radar_conti_ars408) StderrLine: {'line': b'  File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main\n'}
+[1.720184] (radar_conti_ars408) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[1.720241] (radar_conti_ars408) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 630, in parse_package_string\n'}
+[1.720297] (radar_conti_ars408) StderrLine: {'line': b"    pkg.name = _get_node_value(_get_node(root, 'name', filename))\n"}
+[1.720356] (radar_conti_ars408) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 800, in _get_node\n'}
+[1.720412] (radar_conti_ars408) StderrLine: {'line': b'    raise InvalidPackage(\'The manifest must contain exactly one "%s" tag\' % tagname, filename)\n'}
+[1.720556] (radar_conti_ars408) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml':\n"}
+[1.720617] (radar_conti_ars408) StderrLine: {'line': b'The manifest must contain exactly one "name" tag\n'}
+[1.739652] (radar_conti_ars408) StderrLine: {'line': b'CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):\n'}
+[1.739810] (radar_conti_ars408) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[1.739878] (radar_conti_ars408) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[1.739943] (radar_conti_ars408) StderrLine: {'line': b'  /home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml\n'}
+[1.740006] (radar_conti_ars408) StderrLine: {'line': b'  /home/offroad/radar_ws/build/radar_conti_ars408/ament_cmake_core/package.cmake)\n'}
+[1.740068] (radar_conti_ars408) StderrLine: {'line': b'  returned error code 1\n'}
+[1.740130] (radar_conti_ars408) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.740199] (radar_conti_ars408) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[1.740260] (radar_conti_ars408) StderrLine: {'line': b'  /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)\n'}
+[1.740321] (radar_conti_ars408) StderrLine: {'line': b'  CMakeLists.txt:177 (ament_package)\n'}
+[1.740385] (radar_conti_ars408) StderrLine: {'line': b'\n'}
+[1.740445] (radar_conti_ars408) StderrLine: {'line': b'\n'}
+[1.741808] (radar_conti_ars408) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.741909] (radar_conti_ars408) StdoutLine: {'line': b'See also "/home/offroad/radar_ws/build/radar_conti_ars408/CMakeFiles/CMakeOutput.log".\n'}
+[1.741978] (radar_conti_ars408) StdoutLine: {'line': b'See also "/home/offroad/radar_ws/build/radar_conti_ars408/CMakeFiles/CMakeError.log".\n'}
+[1.747890] (radar_conti_ars408) StderrLine: {'line': b'make: *** [Makefile:310: cmake_check_build_system] Error 1\n'}
+[1.749487] (radar_conti_ars408) CommandEnded: {'returncode': 2}
+[1.749896] (radar_conti_ars408) JobEnded: {'identifier': 'radar_conti_ars408', 'rc': 2}
+[1.760049] (-) EventReactorShutdown: {}

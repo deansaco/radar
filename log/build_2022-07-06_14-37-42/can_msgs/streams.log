@@ -1,0 +1,15 @@
+[0.023s] Invoking command in '/home/offroad/radar_ws/build/can_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/can_msgs -- -j12 -l12
+[0.073s] [  3%] Built target can_msgs__cpp
+[0.077s] [ 12%] Built target can_msgs__rosidl_generator_c
+[0.101s] [ 22%] Built target can_msgs__rosidl_typesupport_introspection_cpp
+[0.104s] [ 32%] Built target can_msgs__rosidl_typesupport_cpp
+[0.104s] [ 41%] Built target can_msgs__rosidl_typesupport_c
+[0.109s] [ 58%] Built target can_msgs__rosidl_typesupport_introspection_c
+[0.110s] [ 61%] Built target can_msgs__rosidl_typesupport_fastrtps_cpp
+[0.144s] [ 70%] Built target can_msgs__rosidl_typesupport_fastrtps_c
+[0.164s] [ 70%] Built target can_msgs
+[0.183s] [ 74%] Built target can_msgs__py
+[0.209s] [ 80%] Built target can_msgs__python
+[0.232s] [ 96%] Built target can_msgs__rosidl_typesupport_introspection_c__pyext
+[0.232s] [100%] Built target can_msgs__rosidl_typesupport_c__pyext
+[0.232s] [ 96%] Built target can_msgs__rosidl_typesupport_fastrtps_c__pyext

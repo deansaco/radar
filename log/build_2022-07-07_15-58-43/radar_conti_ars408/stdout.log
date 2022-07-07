@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target talker[0m
+[ 25%] Built target listener
+[ 50%] Built target radar_conti_ars408_component
+[ 62%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[ 87%] Built target radar_conti_ars408_composition

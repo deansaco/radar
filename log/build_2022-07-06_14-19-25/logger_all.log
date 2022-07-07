@@ -1,0 +1,183 @@
+[0.109s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'radar_conti_ars408']
+[0.109s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0d718cdd00>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['radar_conti_ars408'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0d718cdd00>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0d718572b0>)
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.128s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.128s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/offroad/radar_ws'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['ignore', 'ignore_ament_install']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'ignore'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'ignore_ament_install'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['colcon_pkg']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'colcon_pkg'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['colcon_meta']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'colcon_meta'
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['ros']
+[0.139s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/CAN_Recording) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['colcon_pkg']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'colcon_pkg'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['colcon_meta']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'colcon_meta'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['ros']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'ros'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['cmake', 'python']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'cmake'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'python'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extensions ['python_setup_py']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408) by extension 'python_setup_py'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'ignore'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'ignore_ament_install'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'ros'
+[0.142s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'src/radar_conti_ars408/src'
+[0.143s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'src/radar_conti_ars408/src': Error(s) in package 'src/radar_conti_ars408/src/package.xml':
+The manifest must contain exactly one "name" tag
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extensions ['cmake', 'python']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'cmake'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408/src) by extension 'python'
+[0.144s] DEBUG:colcon.colcon_core.package_identification:Package 'src/radar_conti_ars408/src' with type 'cmake' and name 'radar_conti_ars408'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extension 'ignore'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extension 'ignore_ament_install'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extensions ['colcon_pkg']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extension 'colcon_pkg'
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extensions ['colcon_meta']
+[0.144s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extension 'colcon_meta'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extensions ['ros']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src/radar_conti_ars408_msgs) by extension 'ros'
+[0.146s] DEBUG:colcon.colcon_core.package_identification:Package 'src/radar_conti_ars408_msgs' with type 'ros.ament_cmake' and name 'radar_conti_ars408_msgs'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'ros'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['cmake', 'python']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'cmake'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'python'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extensions ['python_setup_py']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge) by extension 'python_setup_py'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extension 'ignore'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extension 'ignore_ament_install'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extensions ['colcon_pkg']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extension 'colcon_pkg'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extensions ['colcon_meta']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extension 'colcon_meta'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extensions ['ros']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/can_msgs) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_socketcan_bridge/can_msgs' with type 'ros.ament_cmake' and name 'can_msgs'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_socketcan_bridge/ros2socketcan_bridge' with type 'ros.ament_cmake' and name 'ros2socketcan_bridge'
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.162s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'can_msgs' in 'src/ros2_socketcan_bridge/can_msgs'
+[0.163s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'radar_conti_ars408_msgs' in 'src/radar_conti_ars408_msgs'
+[0.163s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros2socketcan_bridge' in 'src/ros2_socketcan_bridge/ros2socketcan_bridge'
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.165s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/offroad/radar_ws/install
+[0.166s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 303 installed packages in /opt/ros/foxy
+[0.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_cache' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_first' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_force_configure' from command line to 'False'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'ament_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_cmake_args' from command line to 'None'
+[0.244s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.245s] DEBUG:colcon.colcon_core.verb:Building package 'radar_conti_ars408' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/build/radar_conti_ars408', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/install/radar_conti_ars408', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/radar_conti_ars408/src', 'symlink_install': False, 'test_result_base': None}
+[0.245s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.247s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.247s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/radar_conti_ars408/src'
+[0.249s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.250s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.250s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/build/radar_conti_ars408': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_pubsub LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12
+[1.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/build/radar_conti_ars408' returned '2': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_pubsub LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12
+[2.006s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.006s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.006s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[2.006s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.011s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.011s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.011s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.023s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.024s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/install/local_setup.ps1'
+[2.025s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/install/_local_setup_util_ps1.py'
+[2.026s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/install/setup.ps1'
+[2.027s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/install/local_setup.sh'
+[2.028s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/install/_local_setup_util_sh.py'
+[2.028s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/install/setup.sh'
+[2.029s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/install/local_setup.bash'
+[2.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/install/setup.bash'
+[2.030s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/install/local_setup.zsh'
+[2.031s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/install/setup.zsh'

@@ -1,0 +1,49 @@
+[0.018s] Invoking command in '/home/offroad/radar_ws/build/radar_conti_ars408': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_pubsub LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12
+[0.041s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.218s] -- Found radar_conti_ars408_msgs: 0.0.0 (/home/offroad/radar_ws/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/cmake)
+[0.236s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.239s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.343s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.412s] -- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+[0.414s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[0.512s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.544s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.545s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.713s] -- Found rclcpp_lifecycle: 2.4.1 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+[0.738s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.769s] -- Found can_msgs: 0.0.0 (/home/offroad/radar_ws/install/can_msgs/share/can_msgs/cmake)
+[0.830s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[0.896s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.110s] -- Found ros2socketcan_bridge: 0.0.0 (/home/offroad/radar_ws/install/ros2socketcan_bridge/share/ros2socketcan_bridge/cmake)
+[1.174s] Error parsing '/home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml':
+[1.272s] Traceback (most recent call last):
+[1.273s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.273s]     main()
+[1.273s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.273s]     raise e
+[1.273s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.273s]     package = parse_package_string(
+[1.273s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.273s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.273s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml':
+[1.273s] Error(s):
+[1.273s] - The generic dependency on 'radar_conti_ars408_msgs' is redundant with: build_depend, exec_depend
+[1.290s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.290s]   execute_process(/usr/bin/python3
+[1.290s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.290s]   /home/offroad/radar_ws/src/radar_conti_ars408/src/package.xml
+[1.290s]   /home/offroad/radar_ws/build/radar_conti_ars408/ament_cmake_core/package.cmake)
+[1.290s]   returned error code 1
+[1.290s] Call Stack (most recent call first):
+[1.290s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.290s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[1.290s]   CMakeLists.txt:183 (ament_package)
+[1.290s] 
+[1.291s] 
+[1.292s] -- Configuring incomplete, errors occurred!
+[1.292s] See also "/home/offroad/radar_ws/build/radar_conti_ars408/CMakeFiles/CMakeOutput.log".
+[1.292s] See also "/home/offroad/radar_ws/build/radar_conti_ars408/CMakeFiles/CMakeError.log".
+[1.298s] make: *** [Makefile:398: cmake_check_build_system] Error 1
+[1.299s] Invoked command in '/home/offroad/radar_ws/build/radar_conti_ars408' returned '2': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_pubsub LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12

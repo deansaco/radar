@@ -1,0 +1,56 @@
+[0.011s] Invoking command in '/home/offroad/radar_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/install/cpp_srvcli
+[0.100s] -- The C compiler identification is GNU 9.4.0
+[0.144s] -- The CXX compiler identification is GNU 9.4.0
+[0.148s] -- Check for working C compiler: /usr/bin/cc
+[0.203s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.203s] -- Detecting C compiler ABI info
+[0.261s] -- Detecting C compiler ABI info - done
+[0.271s] -- Detecting C compile features
+[0.271s] -- Detecting C compile features - done
+[0.273s] -- Check for working CXX compiler: /usr/bin/c++
+[0.339s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.340s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.416s] -- Detecting CXX compile features
+[0.416s] -- Detecting CXX compile features - done
+[0.418s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.441s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.441s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.630s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.680s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.688s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.751s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.776s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.844s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.893s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.895s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.896s] -- Looking for pthread.h
+[0.954s] -- Looking for pthread.h - found
+[0.955s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.015s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.015s] -- Looking for pthread_create in pthreads
+[1.067s] -- Looking for pthread_create in pthreads - not found
+[1.067s] -- Looking for pthread_create in pthread
+[1.125s] -- Looking for pthread_create in pthread - found
+[1.126s] -- Found Threads: TRUE  
+[1.276s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[1.423s] -- Configuring done
+[1.434s] -- Generating done
+[1.435s] -- Build files have been written to: /home/offroad/radar_ws/build/cpp_srvcli
+[1.440s] Invoked command in '/home/offroad/radar_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/cpp_srvcli -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/install/cpp_srvcli
+[1.443s] Invoking command in '/home/offroad/radar_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/cpp_srvcli -- -j12 -l12
+[1.477s] [35m[1mScanning dependencies of target client[0m
+[1.477s] [35m[1mScanning dependencies of target server[0m
+[1.486s] [ 25%] [32mBuilding CXX object CMakeFiles/server.dir/src/add_two_ints_server.cpp.o[0m
+[1.502s] [ 50%] [32m[1mLinking CXX executable server[0m
+[1.511s] [ 75%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[1.551s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[1.551s] (.text+0x24): undefined reference to `main'
+[1.551s] collect2: error: ld returned 1 exit status
+[1.552s] make[2]: *** [CMakeFiles/server.dir/build.make:146: server] Error 1
+[1.552s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/server.dir/all] Error 2
+[1.552s] make[1]: *** Waiting for unfinished jobs....
+[3.334s] [100%] [32m[1mLinking CXX executable client[0m
+[3.455s] [100%] Built target client
+[3.455s] make: *** [Makefile:141: all] Error 2
+[3.457s] Invoked command in '/home/offroad/radar_ws/build/cpp_srvcli' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/cpp_srvcli -- -j12 -l12

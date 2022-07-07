@@ -1,0 +1,32 @@
+[0.055s] Invoking command in '/home/offroad/radar_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/cpp_srvcli -- -j12 -l12
+[0.107s] [35m[1mScanning dependencies of target server[0m
+[0.111s] [35m[1mScanning dependencies of target client[0m
+[0.137s] [ 25%] [32mBuilding CXX object CMakeFiles/client.dir/src/add_two_ints_client.cpp.o[0m
+[0.144s] [ 50%] [32mBuilding CXX object CMakeFiles/server.dir/src/add_two_ints_server.cpp.o[0m
+[1.983s] [ 75%] [32m[1mLinking CXX executable server[0m
+[2.108s] [ 75%] Built target server
+[2.149s] [100%] [32m[1mLinking CXX executable client[0m
+[2.274s] [100%] Built target client
+[2.284s] Invoked command in '/home/offroad/radar_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/build/cpp_srvcli -- -j12 -l12
+[2.307s] Invoking command in '/home/offroad/radar_ws/build/cpp_srvcli': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/build/cpp_srvcli
+[2.314s] -- Install configuration: ""
+[2.314s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/lib/cpp_srvcli/server
+[2.315s] -- Set runtime path of "/home/offroad/radar_ws/install/cpp_srvcli/lib/cpp_srvcli/server" to ""
+[2.315s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/lib/cpp_srvcli/client
+[2.315s] -- Set runtime path of "/home/offroad/radar_ws/install/cpp_srvcli/lib/cpp_srvcli/client" to ""
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/ament_index/resource_index/package_run_dependencies/cpp_srvcli
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/ament_index/resource_index/parent_prefix_path/cpp_srvcli
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.sh
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/environment/ament_prefix_path.dsv
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.sh
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/environment/path.dsv
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.bash
+[2.316s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.sh
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.zsh
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/local_setup.dsv
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/package.dsv
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/ament_index/resource_index/packages/cpp_srvcli
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig.cmake
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/cmake/cpp_srvcliConfig-version.cmake
+[2.317s] -- Installing: /home/offroad/radar_ws/install/cpp_srvcli/share/cpp_srvcli/package.xml
+[2.320s] Invoked command in '/home/offroad/radar_ws/build/cpp_srvcli' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/build/cpp_srvcli
