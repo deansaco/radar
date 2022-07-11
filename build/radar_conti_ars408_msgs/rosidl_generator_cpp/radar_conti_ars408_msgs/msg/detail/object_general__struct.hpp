@@ -22,7 +22,7 @@
 // Member 'obj_rcs'
 #include "std_msgs/msg/detail/float64__struct.hpp"
 // Member 'obj_dynprop'
-#include "std_msgs/msg/detail/string__struct.hpp"
+#include "std_msgs/msg/detail/int32__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__radar_conti_ars408_msgs__msg__ObjectGeneral __attribute__((deprecated))
@@ -78,7 +78,7 @@ struct ObjectGeneral_
     std_msgs::msg::Float64_<ContainerAllocator>;
   _obj_vrellat_type obj_vrellat;
   using _obj_dynprop_type =
-    std_msgs::msg::String_<ContainerAllocator>;
+    std_msgs::msg::Int32_<ContainerAllocator>;
   _obj_dynprop_type obj_dynprop;
   using _obj_rcs_type =
     std_msgs::msg::Float64_<ContainerAllocator>;
@@ -110,7 +110,7 @@ struct ObjectGeneral_
     return *this;
   }
   Type & set__obj_dynprop(
-    const std_msgs::msg::String_<ContainerAllocator> & _arg)
+    const std_msgs::msg::Int32_<ContainerAllocator> & _arg)
   {
     this->obj_dynprop = _arg;
     return *this;

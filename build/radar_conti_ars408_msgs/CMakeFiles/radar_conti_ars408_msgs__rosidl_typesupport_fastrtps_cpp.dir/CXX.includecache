@@ -1221,8 +1221,8 @@ vector
 -
 std_msgs/msg/detail/float64__struct.hpp
 rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/float64__struct.hpp
-std_msgs/msg/detail/string__struct.hpp
-rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/string__struct.hpp
+std_msgs/msg/detail/int32__struct.hpp
+rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/int32__struct.hpp
 
 rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/object_general__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
@@ -1241,8 +1241,8 @@ vector
 -
 std_msgs/msg/detail/float64__struct.hpp
 rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/float64__struct.hpp
-std_msgs/msg/detail/string__struct.hpp
-rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/string__struct.hpp
+std_msgs/msg/detail/int32__struct.hpp
+rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/int32__struct.hpp
 
 rosidl_generator_cpp/radar_conti_ars408_msgs/msg/detail/object_list__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp

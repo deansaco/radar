@@ -25,14 +25,14 @@ extern "C"
 // Member 'obj_width'
 #include "std_msgs/msg/detail/float64__struct.h"
 // Member 'obj_class'
-#include "std_msgs/msg/detail/string__struct.h"
+#include "std_msgs/msg/detail/int32__struct.h"
 
 // Struct defined in msg/ObjectExtended in the package radar_conti_ars408_msgs.
 typedef struct radar_conti_ars408_msgs__msg__ObjectExtended
 {
   std_msgs__msg__Float64 obj_arellong;
   std_msgs__msg__Float64 obj_arellat;
-  std_msgs__msg__String obj_class;
+  std_msgs__msg__Int32 obj_class;
   std_msgs__msg__Float64 obj_orientationangle;
   std_msgs__msg__Float64 obj_length;
   std_msgs__msg__Float64 obj_width;

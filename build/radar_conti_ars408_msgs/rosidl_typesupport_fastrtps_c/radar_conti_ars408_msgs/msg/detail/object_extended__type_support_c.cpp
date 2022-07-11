@@ -35,7 +35,7 @@ extern "C"
 #endif
 
 #include "std_msgs/msg/detail/float64__functions.h"  // obj_arellat, obj_arellong, obj_length, obj_orientationangle, obj_width
-#include "std_msgs/msg/detail/string__functions.h"  // obj_class
+#include "std_msgs/msg/detail/int32__functions.h"  // obj_class
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_radar_conti_ars408_msgs
@@ -52,18 +52,18 @@ ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_radar_conti_ars408_msgs
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Float64)();
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_radar_conti_ars408_msgs
-size_t get_serialized_size_std_msgs__msg__String(
+size_t get_serialized_size_std_msgs__msg__Int32(
   const void * untyped_ros_message,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_radar_conti_ars408_msgs
-size_t max_serialized_size_std_msgs__msg__String(
+size_t max_serialized_size_std_msgs__msg__Int32(
   bool & full_bounded,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_radar_conti_ars408_msgs
 const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, String)();
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Int32)();
 
 
 using _ObjectExtended__ros_msg_type = radar_conti_ars408_msgs__msg__ObjectExtended;
@@ -110,7 +110,7 @@ static bool _ObjectExtended__cdr_serialize(
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, std_msgs, msg, String
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int32
       )()->data);
     if (!callbacks->cdr_serialize(
         &ros_message->obj_class, cdr))
@@ -206,7 +206,7 @@ static bool _ObjectExtended__cdr_deserialize(
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, std_msgs, msg, String
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int32
       )()->data);
     if (!callbacks->cdr_deserialize(
         cdr, &ros_message->obj_class))
@@ -284,7 +284,7 @@ size_t get_serialized_size_radar_conti_ars408_msgs__msg__ObjectExtended(
     &(ros_message->obj_arellat), current_alignment);
   // field.name obj_class
 
-  current_alignment += get_serialized_size_std_msgs__msg__String(
+  current_alignment += get_serialized_size_std_msgs__msg__Int32(
     &(ros_message->obj_class), current_alignment);
   // field.name obj_orientationangle
 
@@ -351,7 +351,7 @@ size_t max_serialized_size_radar_conti_ars408_msgs__msg__ObjectExtended(
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
-        max_serialized_size_std_msgs__msg__String(
+        max_serialized_size_std_msgs__msg__Int32(
         full_bounded, current_alignment);
     }
   }

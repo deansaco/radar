@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target radar_conti_ars408_component[0m
+[ 25%] Built target talker
+[ 50%] Built target listener
+[ 62%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o[0m

@@ -17,7 +17,7 @@
 // Member `obj_width`
 #include "std_msgs/msg/detail/float64__functions.h"
 // Member `obj_class`
-#include "std_msgs/msg/detail/string__functions.h"
+#include "std_msgs/msg/detail/int32__functions.h"
 
 bool
 radar_conti_ars408_msgs__msg__ObjectExtended__init(radar_conti_ars408_msgs__msg__ObjectExtended * msg)
@@ -36,7 +36,7 @@ radar_conti_ars408_msgs__msg__ObjectExtended__init(radar_conti_ars408_msgs__msg_
     return false;
   }
   // obj_class
-  if (!std_msgs__msg__String__init(&msg->obj_class)) {
+  if (!std_msgs__msg__Int32__init(&msg->obj_class)) {
     radar_conti_ars408_msgs__msg__ObjectExtended__fini(msg);
     return false;
   }
@@ -69,7 +69,7 @@ radar_conti_ars408_msgs__msg__ObjectExtended__fini(radar_conti_ars408_msgs__msg_
   // obj_arellat
   std_msgs__msg__Float64__fini(&msg->obj_arellat);
   // obj_class
-  std_msgs__msg__String__fini(&msg->obj_class);
+  std_msgs__msg__Int32__fini(&msg->obj_class);
   // obj_orientationangle
   std_msgs__msg__Float64__fini(&msg->obj_orientationangle);
   // obj_length

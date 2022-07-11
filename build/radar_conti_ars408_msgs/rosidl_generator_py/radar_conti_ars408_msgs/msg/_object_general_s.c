@@ -33,9 +33,9 @@ bool std_msgs__msg__float64__convert_from_py(PyObject * _pymsg, void * _ros_mess
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__float64__convert_to_py(void * raw_ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-bool std_msgs__msg__string__convert_from_py(PyObject * _pymsg, void * _ros_message);
+bool std_msgs__msg__int32__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
-PyObject * std_msgs__msg__string__convert_to_py(void * raw_ros_message);
+PyObject * std_msgs__msg__int32__convert_to_py(void * raw_ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__float64__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
@@ -123,7 +123,7 @@ bool radar_conti_ars408_msgs__msg__object_general__convert_from_py(PyObject * _p
     if (!field) {
       return false;
     }
-    if (!std_msgs__msg__string__convert_from_py(field, &ros_message->obj_dynprop)) {
+    if (!std_msgs__msg__int32__convert_from_py(field, &ros_message->obj_dynprop)) {
       Py_DECREF(field);
       return false;
     }
@@ -220,7 +220,7 @@ PyObject * radar_conti_ars408_msgs__msg__object_general__convert_to_py(void * ra
   }
   {  // obj_dynprop
     PyObject * field = NULL;
-    field = std_msgs__msg__string__convert_to_py(&ros_message->obj_dynprop);
+    field = std_msgs__msg__int32__convert_to_py(&ros_message->obj_dynprop);
     if (!field) {
       return NULL;
     }

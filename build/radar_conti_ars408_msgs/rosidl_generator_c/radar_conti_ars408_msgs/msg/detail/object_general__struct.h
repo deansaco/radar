@@ -25,7 +25,7 @@ extern "C"
 // Member 'obj_rcs'
 #include "std_msgs/msg/detail/float64__struct.h"
 // Member 'obj_dynprop'
-#include "std_msgs/msg/detail/string__struct.h"
+#include "std_msgs/msg/detail/int32__struct.h"
 
 // Struct defined in msg/ObjectGeneral in the package radar_conti_ars408_msgs.
 typedef struct radar_conti_ars408_msgs__msg__ObjectGeneral
@@ -34,7 +34,7 @@ typedef struct radar_conti_ars408_msgs__msg__ObjectGeneral
   std_msgs__msg__Float64 obj_distlat;
   std_msgs__msg__Float64 obj_vrellong;
   std_msgs__msg__Float64 obj_vrellat;
-  std_msgs__msg__String obj_dynprop;
+  std_msgs__msg__Int32 obj_dynprop;
   std_msgs__msg__Float64 obj_rcs;
 } radar_conti_ars408_msgs__msg__ObjectGeneral;
 

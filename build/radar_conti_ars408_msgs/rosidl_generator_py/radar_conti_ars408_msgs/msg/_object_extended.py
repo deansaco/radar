@@ -44,9 +44,9 @@ class Metaclass_ObjectExtended(type):
             if Float64.__class__._TYPE_SUPPORT is None:
                 Float64.__class__.__import_type_support__()
 
-            from std_msgs.msg import String
-            if String.__class__._TYPE_SUPPORT is None:
-                String.__class__.__import_type_support__()
+            from std_msgs.msg import Int32
+            if Int32.__class__._TYPE_SUPPORT is None:
+                Int32.__class__.__import_type_support__()
 
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
@@ -72,7 +72,7 @@ class ObjectExtended(metaclass=Metaclass_ObjectExtended):
     _fields_and_field_types = {
         'obj_arellong': 'std_msgs/Float64',
         'obj_arellat': 'std_msgs/Float64',
-        'obj_class': 'std_msgs/String',
+        'obj_class': 'std_msgs/Int32',
         'obj_orientationangle': 'std_msgs/Float64',
         'obj_length': 'std_msgs/Float64',
         'obj_width': 'std_msgs/Float64',
@@ -81,7 +81,7 @@ class ObjectExtended(metaclass=Metaclass_ObjectExtended):
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'String'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Int32'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
@@ -95,8 +95,8 @@ class ObjectExtended(metaclass=Metaclass_ObjectExtended):
         self.obj_arellong = kwargs.get('obj_arellong', Float64())
         from std_msgs.msg import Float64
         self.obj_arellat = kwargs.get('obj_arellat', Float64())
-        from std_msgs.msg import String
-        self.obj_class = kwargs.get('obj_class', String())
+        from std_msgs.msg import Int32
+        self.obj_class = kwargs.get('obj_class', Int32())
         from std_msgs.msg import Float64
         self.obj_orientationangle = kwargs.get('obj_orientationangle', Float64())
         from std_msgs.msg import Float64
@@ -188,10 +188,10 @@ class ObjectExtended(metaclass=Metaclass_ObjectExtended):
     @obj_class.setter
     def obj_class(self, value):
         if __debug__:
-            from std_msgs.msg import String
+            from std_msgs.msg import Int32
             assert \
-                isinstance(value, String), \
-                "The 'obj_class' field must be a sub message of type 'String'"
+                isinstance(value, Int32), \
+                "The 'obj_class' field must be a sub message of type 'Int32'"
         self._obj_class = value
 
     @property

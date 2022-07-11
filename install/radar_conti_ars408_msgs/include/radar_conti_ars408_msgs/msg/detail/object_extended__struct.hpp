@@ -22,7 +22,7 @@
 // Member 'obj_width'
 #include "std_msgs/msg/detail/float64__struct.hpp"
 // Member 'obj_class'
-#include "std_msgs/msg/detail/string__struct.hpp"
+#include "std_msgs/msg/detail/int32__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__radar_conti_ars408_msgs__msg__ObjectExtended __attribute__((deprecated))
@@ -72,7 +72,7 @@ struct ObjectExtended_
     std_msgs::msg::Float64_<ContainerAllocator>;
   _obj_arellat_type obj_arellat;
   using _obj_class_type =
-    std_msgs::msg::String_<ContainerAllocator>;
+    std_msgs::msg::Int32_<ContainerAllocator>;
   _obj_class_type obj_class;
   using _obj_orientationangle_type =
     std_msgs::msg::Float64_<ContainerAllocator>;
@@ -98,7 +98,7 @@ struct ObjectExtended_
     return *this;
   }
   Type & set__obj_class(
-    const std_msgs::msg::String_<ContainerAllocator> & _arg)
+    const std_msgs::msg::Int32_<ContainerAllocator> & _arg)
   {
     this->obj_class = _arg;
     return *this;

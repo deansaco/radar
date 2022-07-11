@@ -44,9 +44,9 @@ class Metaclass_ObjectGeneral(type):
             if Float64.__class__._TYPE_SUPPORT is None:
                 Float64.__class__.__import_type_support__()
 
-            from std_msgs.msg import String
-            if String.__class__._TYPE_SUPPORT is None:
-                String.__class__.__import_type_support__()
+            from std_msgs.msg import Int32
+            if Int32.__class__._TYPE_SUPPORT is None:
+                Int32.__class__.__import_type_support__()
 
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
@@ -74,7 +74,7 @@ class ObjectGeneral(metaclass=Metaclass_ObjectGeneral):
         'obj_distlat': 'std_msgs/Float64',
         'obj_vrellong': 'std_msgs/Float64',
         'obj_vrellat': 'std_msgs/Float64',
-        'obj_dynprop': 'std_msgs/String',
+        'obj_dynprop': 'std_msgs/Int32',
         'obj_rcs': 'std_msgs/Float64',
     }
 
@@ -83,7 +83,7 @@ class ObjectGeneral(metaclass=Metaclass_ObjectGeneral):
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'String'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Int32'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float64'),  # noqa: E501
     )
 
@@ -99,8 +99,8 @@ class ObjectGeneral(metaclass=Metaclass_ObjectGeneral):
         self.obj_vrellong = kwargs.get('obj_vrellong', Float64())
         from std_msgs.msg import Float64
         self.obj_vrellat = kwargs.get('obj_vrellat', Float64())
-        from std_msgs.msg import String
-        self.obj_dynprop = kwargs.get('obj_dynprop', String())
+        from std_msgs.msg import Int32
+        self.obj_dynprop = kwargs.get('obj_dynprop', Int32())
         from std_msgs.msg import Float64
         self.obj_rcs = kwargs.get('obj_rcs', Float64())
 
@@ -216,10 +216,10 @@ class ObjectGeneral(metaclass=Metaclass_ObjectGeneral):
     @obj_dynprop.setter
     def obj_dynprop(self, value):
         if __debug__:
-            from std_msgs.msg import String
+            from std_msgs.msg import Int32
             assert \
-                isinstance(value, String), \
-                "The 'obj_dynprop' field must be a sub message of type 'String'"
+                isinstance(value, Int32), \
+                "The 'obj_dynprop' field must be a sub message of type 'Int32'"
         self._obj_dynprop = value
 
     @property

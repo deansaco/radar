@@ -3,7 +3,7 @@
 // generated code does not contain a copyright notice
 
 #include "std_msgs/msg/Float64.idl"
-#include "std_msgs/msg/String.idl"
+#include "std_msgs/msg/Int32.idl"
 
 module radar_conti_ars408_msgs {
   module msg {
@@ -67,7 +67,7 @@ module radar_conti_ars408_msgs {
 
       std_msgs::msg::Float64 obj_arellat;
 
-      std_msgs::msg::String obj_class;
+      std_msgs::msg::Int32 obj_class;
 
       std_msgs::msg::Float64 obj_orientationangle;
 

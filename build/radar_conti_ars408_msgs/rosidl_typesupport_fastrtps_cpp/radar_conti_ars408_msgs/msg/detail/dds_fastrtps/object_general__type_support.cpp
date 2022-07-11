@@ -115,16 +115,16 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 bool cdr_serialize(
-  const std_msgs::msg::String &,
+  const std_msgs::msg::Int32 &,
   eprosima::fastcdr::Cdr &);
 bool cdr_deserialize(
   eprosima::fastcdr::Cdr &,
-  std_msgs::msg::String &);
+  std_msgs::msg::Int32 &);
 size_t get_serialized_size(
-  const std_msgs::msg::String &,
+  const std_msgs::msg::Int32 &,
   size_t current_alignment);
 size_t
-max_serialized_size_String(
+max_serialized_size_Int32(
   bool & full_bounded,
   size_t current_alignment);
 }  // namespace typesupport_fastrtps_cpp
@@ -347,7 +347,7 @@ max_serialized_size_ObjectGeneral(
 
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
-        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_String(
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Int32(
         full_bounded, current_alignment);
     }
   }

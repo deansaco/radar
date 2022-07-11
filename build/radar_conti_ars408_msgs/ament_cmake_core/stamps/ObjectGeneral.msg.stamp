@@ -57,5 +57,5 @@ std_msgs/Float64 obj_distlong
 std_msgs/Float64 obj_distlat
 std_msgs/Float64 obj_vrellong
 std_msgs/Float64 obj_vrellat
-std_msgs/String obj_dynprop
+std_msgs/Int32 obj_dynprop
 std_msgs/Float64 obj_rcs

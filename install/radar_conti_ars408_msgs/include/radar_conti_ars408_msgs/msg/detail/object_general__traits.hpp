@@ -18,7 +18,7 @@
 // Member 'obj_rcs'
 #include "std_msgs/msg/detail/float64__traits.hpp"
 // Member 'obj_dynprop'
-#include "std_msgs/msg/detail/string__traits.hpp"
+#include "std_msgs/msg/detail/int32__traits.hpp"
 
 namespace rosidl_generator_traits
 {
@@ -37,11 +37,11 @@ inline const char * name<radar_conti_ars408_msgs::msg::ObjectGeneral>()
 
 template<>
 struct has_fixed_size<radar_conti_ars408_msgs::msg::ObjectGeneral>
-  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Float64>::value && has_fixed_size<std_msgs::msg::String>::value> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Float64>::value && has_fixed_size<std_msgs::msg::Int32>::value> {};
 
 template<>
 struct has_bounded_size<radar_conti_ars408_msgs::msg::ObjectGeneral>
-  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Float64>::value && has_bounded_size<std_msgs::msg::String>::value> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Float64>::value && has_bounded_size<std_msgs::msg::Int32>::value> {};
 
 template<>
 struct is_message<radar_conti_ars408_msgs::msg::ObjectGeneral>

@@ -55,7 +55,7 @@
 #
 std_msgs/Float64 obj_arellong
 std_msgs/Float64 obj_arellat
-std_msgs/String  obj_class
+std_msgs/Int32  obj_class
 std_msgs/Float64 obj_orientationangle
 std_msgs/Float64 obj_length
 std_msgs/Float64 obj_width

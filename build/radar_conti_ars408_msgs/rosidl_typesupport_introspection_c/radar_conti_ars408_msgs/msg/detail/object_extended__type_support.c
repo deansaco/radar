@@ -26,9 +26,9 @@
 // Member `obj_width`
 #include "std_msgs/msg/detail/float64__rosidl_typesupport_introspection_c.h"
 // Member `obj_class`
-#include "std_msgs/msg/string.h"
+#include "std_msgs/msg/int32.h"
 // Member `obj_class`
-#include "std_msgs/msg/detail/string__rosidl_typesupport_introspection_c.h"
+#include "std_msgs/msg/detail/int32__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -168,7 +168,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
   ObjectExtended__rosidl_typesupport_introspection_c__ObjectExtended_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float64)();
   ObjectExtended__rosidl_typesupport_introspection_c__ObjectExtended_message_member_array[2].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, String)();
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Int32)();
   ObjectExtended__rosidl_typesupport_introspection_c__ObjectExtended_message_member_array[3].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float64)();
   ObjectExtended__rosidl_typesupport_introspection_c__ObjectExtended_message_member_array[4].members_ =

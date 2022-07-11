@@ -1,0 +1,42 @@
+[0.015s] Invoking command in '/home/offroad/radar_ws/build/radar_conti_ars408': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/radar_conti_ars408:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12
+[0.059s] [35m[1mScanning dependencies of target radar_conti_ars408_component[0m
+[0.075s] [ 25%] Built target talker
+[0.079s] [ 50%] Built target listener
+[0.095s] [ 62%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o[0m
+[0.139s] In file included from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+[0.139s]                  from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[0.139s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+[0.140s]    43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+[0.141s]       | 
+[0.142s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[0.143s]    42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+[0.143s]       | 
+[2.024s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[2.024s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:73:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.024s]    73 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[2.024s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.024s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[2.024s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:81:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[2.024s]    81 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[2.024s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.038s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.038s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.038s]                  from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:25[m[K,
+[2.038s]                  from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[2.038s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvoid FHAC::radar_conti_ars408::handle_object_list(can_msgs::msg::Frame)[m[K’:
+[2.039s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:314:132:[m[K [01;31m[Kerror: [m[Kinvalid static_cast from type ‘[01m[Kstd_msgs::msg::String_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to type ‘[01m[Kint[m[K’
+[2.039s]   314 | tatic_cast<int>(object_map_[id].object_extended.obj_class.data[01;31m[K)[m[K);
+[2.039s]       |                                                               [01;31m[K^[m[K
+[2.039s] 
+[3.484s] make[2]: *** [CMakeFiles/radar_conti_ars408_component.dir/build.make:63: CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o] Error 1
+[3.484s] make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/radar_conti_ars408_component.dir/all] Error 2
+[3.484s] make: *** [Makefile:141: all] Error 2
+[3.486s] Invoked command in '/home/offroad/radar_ws/build/radar_conti_ars408' returned '2': CMAKE_PREFIX_PATH=/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/can_msgs:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/radar_conti_ars408:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/install/can_msgs/lib:/home/offroad/radar_ws/install/radar_conti_ars408/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib /usr/bin/cmake --build /home/offroad/radar_ws/build/radar_conti_ars408 -- -j12 -l12

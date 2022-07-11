@@ -17,7 +17,7 @@
 // Member `obj_rcs`
 #include "std_msgs/msg/detail/float64__functions.h"
 // Member `obj_dynprop`
-#include "std_msgs/msg/detail/string__functions.h"
+#include "std_msgs/msg/detail/int32__functions.h"
 
 bool
 radar_conti_ars408_msgs__msg__ObjectGeneral__init(radar_conti_ars408_msgs__msg__ObjectGeneral * msg)
@@ -46,7 +46,7 @@ radar_conti_ars408_msgs__msg__ObjectGeneral__init(radar_conti_ars408_msgs__msg__
     return false;
   }
   // obj_dynprop
-  if (!std_msgs__msg__String__init(&msg->obj_dynprop)) {
+  if (!std_msgs__msg__Int32__init(&msg->obj_dynprop)) {
     radar_conti_ars408_msgs__msg__ObjectGeneral__fini(msg);
     return false;
   }
@@ -73,7 +73,7 @@ radar_conti_ars408_msgs__msg__ObjectGeneral__fini(radar_conti_ars408_msgs__msg__
   // obj_vrellat
   std_msgs__msg__Float64__fini(&msg->obj_vrellat);
   // obj_dynprop
-  std_msgs__msg__String__fini(&msg->obj_dynprop);
+  std_msgs__msg__Int32__fini(&msg->obj_dynprop);
   // obj_rcs
   std_msgs__msg__Float64__fini(&msg->obj_rcs);
 }

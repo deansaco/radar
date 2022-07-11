@@ -26,7 +26,9 @@
 #include "sensor_msgs/msg/nav_sat_fix.hpp"
 #include <ament_index_cpp/get_package_share_directory.hpp>
 
-#//include "radar_conti_ars408_msgs/msg/object_list.hpp"
+#//
+
+//include "radar_conti_ars408_msgs/msg/object_list.hpp"
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -154,13 +156,19 @@ void radar_conti_ars408::can_receive_callback(const can_msgs::msg::Frame msg)
 
 //##############Task5################   
 // create can receive callback
+//each time a CAN frame is detected, this callback function for CAN is called
 // 1. wait for Radar State Message
 // 2. if Radar Output Mode ==1 in Radar State Message -> call handle_object_list function
 //OutputTypeCfg is the radar state message that defines the mode of operation (objects, clusters, or none)
+// the msg object has two pieces of data : msg.id uniquely defines the message --- msg.data is the data field
+//all IDS (msg.id) are defined in ars_408_can_defines.h
+//msg.data contains raw values ...to calculate physical values we use the GET() and CALC() macros
+//always use 1.0 when calling CALC
+
 //*****NO CODE FOR CLUSTERS????*****
             if (msg.id == ID_RadarState) {
                 operation_mode_ =CALC_RadarState_RadarState_OutputTypeCfg(GET_RadarState_RadarState_OutputTypeCfg(msg.data),1.0);
-
+                //if radar is detecting objects, operation_mode_ = 1
             }
 
             //no output
@@ -184,6 +192,24 @@ void radar_conti_ars408::can_receive_callback(const can_msgs::msg::Frame msg)
 // ##################################
 
 }
+
+void toClass(int index){
+    if (index == 0){
+        printf("point");
+    }
+    else if (index==1){
+        printf("car");
+    }
+
+}
+
+// map<int, string> classmap;
+// classmap.insert({0, "point"});
+// classmap.insert({1, "car"});
+
+// std::string class1 = classmap[0];
+// print(class1)
+
 
 
 void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
@@ -229,11 +255,14 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                 int id = GET_Obj_1_General_Obj_ID(msg.data);
                 o.obj_id.data = GET_Obj_1_General_Obj_ID(msg.data);
 
-               // //RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%04x", o.obj_id.data);
+                //RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%d", o.obj_id.data);
+ 
 
                 //longitudinal distance
                 o.object_general.obj_distlong.data =
                         CALC_Obj_1_General_Obj_DistLong(GET_Obj_1_General_Obj_DistLong(msg.data), 1.0);
+
+                RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%d \n Object_dist_long: 0x%0.4f m", o.obj_id.data, o.object_general.obj_distlong.data);
 
                 //lateral distance
                 o.object_general.obj_distlat.data =
@@ -249,6 +278,7 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
 
                 o.object_general.obj_dynprop.data =
                         CALC_Obj_1_General_Obj_DynProp(GET_Obj_1_General_Obj_DynProp(msg.data), 1.0);
+                RCLCPP_INFO(this->get_logger(), "Object Dynamic Property: %d", o.object_general.obj_dynprop.data);
 
                 o.object_general.obj_rcs.data = 
                         CALC_Obj_1_General_Obj_RCS(GET_Obj_1_General_Obj_RCS(msg.data), 1.0);
@@ -263,10 +293,10 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
             //for each Obj_2_Quality message the existing object in the map has to be updated
             if (msg.id == ID_Obj_2_Quality) {
 
-               // //RCLCPP_INFO(this->get_logger(), "Received Object_2_Quality msg (0x60c)");
+                
 
                 int id = GET_Obj_2_Quality_Obj_ID(msg.data);
-
+                //RCLCPP_INFO(this->get_logger(), "Received Object_2_Quality msg %0.4f", object_map_[id].object_quality.obj_distlong_rms.data);
 
                 object_map_[id].object_quality.obj_distlong_rms.data =
                         CALC_Obj_2_Quality_Obj_DistLong_rms(GET_Obj_2_Quality_Obj_DistLong_rms(msg.data), 1.0);
@@ -279,6 +309,7 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
  
                 object_map_[id].object_quality.obj_vrellat_rms.data =
                         CALC_Obj_2_Quality_Obj_VrelLat_rms(GET_Obj_2_Quality_Obj_VrelLat_rms(msg.data), 1.0);
+                                
 
             }
 
@@ -298,7 +329,9 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
 
                 object_map_[id].object_extended.obj_class.data =
                         CALC_Obj_3_Extended_Obj_Class(GET_Obj_3_Extended_Obj_Class(msg.data), 1.0);
-
+                //return static_cast<int>(object_map_[id].object_extended.obj_class.data);
+                RCLCPP_INFO(this->get_logger(), "Object Class: %d", object_map_[id].object_extended.obj_class.data);
+                
                 object_map_[id].object_extended.obj_orientationangle.data =
                         CALC_Obj_3_Extended_Obj_OrientationAngle(GET_Obj_3_Extended_Obj_OrientationAngle(msg.data),
                                                                  1.0);
@@ -416,8 +449,11 @@ void radar_conti_ars408::publish_object_map() {
                 mEgoCar.lifetime = rclcpp::Duration(0.2);
                 mEgoCar.frame_locked = false;
 
-                marker_array.markers.push_back(mEgoCar);
 
+
+
+                marker_array.markers.push_back(mEgoCar);
+                //itr-> first is the map id ---   itr->second is the data
                 for (itr = object_map_.begin(); itr != object_map_.end(); ++itr) {
                     //marker for object bounding box
                     visualization_msgs::msg::Marker mobject;
@@ -442,9 +478,9 @@ void radar_conti_ars408::publish_object_map() {
                     mtext.pose.orientation.x = myQuaternion.getX();
                     mtext.pose.orientation.y = myQuaternion.getY();
                     mtext.pose.orientation.z = myQuaternion.getZ();
-                    mtext.scale.x = 1.0;
-                    mtext.scale.y = 1.0;
-                    mtext.scale.z = 2.0;
+                    mtext.scale.x = 0.8;
+                    mtext.scale.y = 0.8;
+                    mtext.scale.z = 0.8;
                     mtext.color.r = 1.0;
                     mtext.color.g = 1.0;
                     mtext.color.b = 1.0;
@@ -456,10 +492,10 @@ void radar_conti_ars408::publish_object_map() {
                     + " RCS: " + std::to_string(itr->second.object_general.obj_rcs.data) + "dBm^2" + " \n" 
                     + " V_long: " +   std::to_string(itr->second.object_general.obj_vrellong.data) + "m/s" + " \n" 
                     + " V_lat: " + std::to_string(itr->second.object_general.obj_vrellat.data) + "m/s" + " \n"
-                    + " Dynamic_Property: " + itr->second.object_general.obj_dynprop.data  + "\n";
+                    + " Dynamic_Property: " + std::to_string(itr->second.object_general.obj_dynprop.data)  + "\n"
                     //+ "Lat_Acceleration" + std::to_string(itr->second.object_extended.obj_arellat.data) + "m/s^2" +"\n"
                     //+ " Orientation: " + std::to_string(itr->second.object_extended.obj_orientationangle.data) + "degree";
-                    //+ "Class: " + std::to_string(itr->second.object_extended.obj_class.data) ; 
+                    + "Class: " + std::to_string(itr->second.object_extended.obj_class.data); 
 
 
                     marker_array.markers.push_back(mtext);

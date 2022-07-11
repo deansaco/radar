@@ -102,7 +102,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ObjectGeneral
     "obj_dynprop",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::String>(),  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Int32>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound

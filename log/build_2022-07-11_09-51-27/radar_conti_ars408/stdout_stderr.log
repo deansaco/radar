@@ -1,0 +1,41 @@
+[ 12%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o[0m
+[ 62%] Built target talker
+[ 62%] Built target listener
+In file included from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:31:1:[m[K [01;31m[Kerror: [m[K‘[01m[Kinclude[m[K’ does not name a type
+   31 | [01;31m[Kinclude[m[K "radar_conti_ars408_msgs/msg/object_list.hpp"
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_configure(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:62:89:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   62 |     canChannel0.Init("can0", std::bind(&radar_conti_ars408::can_receive_callback, this, [01;31m[K_1[m[K));
+      |                                                                                         [01;31m[K^~[m[K
+      |                                                                                         [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/context.hpp:19[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/contexts/default_context.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:32[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:25[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/usr/include/c++/9/functional:211:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  211 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                  [01;36m[K^~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:73:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   73 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:81:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   81 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/radar_conti_ars408_component.dir/build.make:63: CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/radar_conti_ars408_component.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

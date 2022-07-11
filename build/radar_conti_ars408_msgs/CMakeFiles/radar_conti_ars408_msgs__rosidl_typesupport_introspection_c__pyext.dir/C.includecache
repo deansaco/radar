@@ -1075,8 +1075,8 @@ stdint.h
 -
 std_msgs/msg/detail/float64__struct.h
 rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/float64__struct.h
-std_msgs/msg/detail/string__struct.h
-rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/int32__struct.h
+rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/int32__struct.h
 
 rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/object_extended__type_support.h
 rosidl_typesupport_interface/macros.h
@@ -1107,8 +1107,8 @@ stdint.h
 -
 std_msgs/msg/detail/float64__struct.h
 rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/float64__struct.h
-std_msgs/msg/detail/string__struct.h
-rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/string__struct.h
+std_msgs/msg/detail/int32__struct.h
+rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/std_msgs/msg/detail/int32__struct.h
 
 rosidl_generator_c/radar_conti_ars408_msgs/msg/detail/object_general__type_support.h
 rosidl_typesupport_interface/macros.h

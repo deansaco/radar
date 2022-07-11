@@ -1,0 +1,83 @@
+In file included from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+   43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+      | 
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+   42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+      | 
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:436:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  436 |                 classmap[0] = [01;35m[K'point'[m[K;
+      |                               [01;35m[K^~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:437:31:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+  437 |                 classmap[1] = [01;35m[K'car'[m[K;
+      |                               [01;35m[K^~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:438:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  438 |                 classmap[2] = [01;35m[K'truck'[m[K;
+      |                               [01;35m[K^~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:439:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  439 |                 classmap[3] = [01;35m[K'reserved'[m[K;
+      |                               [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:440:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  440 |                 classmap[4] = [01;35m[K'motorcycle'[m[K;
+      |                               [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:441:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  441 |                 classmap[5] = [01;35m[K'bicycle'[m[K;
+      |                               [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:442:31:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K-Wmultichar[m[K]
+  442 |                 classmap[6] = [01;35m[K'wide'[m[K;
+      |                               [01;35m[K^~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:443:31:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+  443 |                 classmap[7] = [01;35m[K'reserved'[m[K;
+      |                               [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:73:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   73 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:81:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   81 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvoid FHAC::radar_conti_ars408::publish_object_map()[m[K’:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:436:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K1869180532[m[K’ to ‘[01m[K't'[m[K’ [[01;35m[K-Woverflow[m[K]
+  436 |                 classmap[0] = [01;35m[K'point'[m[K;
+      |                               [01;35m[K^~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:437:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K6513010[m[K’ to ‘[01m[K'r'[m[K’ [[01;35m[K-Woverflow[m[K]
+  437 |                 classmap[1] = [01;35m[K'car'[m[K;
+      |                               [01;35m[K^~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:438:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K1920295787[m[K’ to ‘[01m[K'k'[m[K’ [[01;35m[K-Woverflow[m[K]
+  438 |                 classmap[2] = [01;35m[K'truck'[m[K;
+      |                               [01;35m[K^~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:439:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K1920361828[m[K’ to ‘[01m[K'd'[m[K’ [[01;35m[K-Woverflow[m[K]
+  439 |                 classmap[3] = [01;35m[K'reserved'[m[K;
+      |                               [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:440:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K2036558949[m[K’ to ‘[01m[K'e'[m[K’ [[01;35m[K-Woverflow[m[K]
+  440 |                 classmap[4] = [01;35m[K'motorcycle'[m[K;
+      |                               [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:441:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K2036558949[m[K’ to ‘[01m[K'e'[m[K’ [[01;35m[K-Woverflow[m[K]
+  441 |                 classmap[5] = [01;35m[K'bicycle'[m[K;
+      |                               [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:442:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K2003395685[m[K’ to ‘[01m[K'e'[m[K’ [[01;35m[K-Woverflow[m[K]
+  442 |                 classmap[6] = [01;35m[K'wide'[m[K;
+      |                               [01;35m[K^~~~~~[m[K
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:443:31:[m[K [01;35m[Kwarning: [m[Koverflow in conversion from ‘[01m[Kint[m[K’ to ‘[01m[Kchar[m[K’ changes value from ‘[01m[K1920361828[m[K’ to ‘[01m[K'd'[m[K’ [[01;35m[K-Woverflow[m[K]
+  443 |                 classmap[7] = [01;35m[K'reserved'[m[K;
+      |                               [01;35m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:25[m[K,
+                 from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:445:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kdo[m[K’
+  445 |                 [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Object Class: %s", class1);
+      |                 [01;31m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/radar_conti_ars408_component.dir/build.make:63: CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/radar_conti_ars408_component.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
