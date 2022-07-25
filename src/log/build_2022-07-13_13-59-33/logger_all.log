@@ -1,0 +1,420 @@
+[0.286s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.286s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f9a0c8d5fd0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f9a0c8d5fd0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f9a0c85f490>)
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.341s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/offroad/radar_ws/src'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ignore'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ignore_ament_install'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['colcon_pkg']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'colcon_pkg'
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['colcon_meta']
+[0.372s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'colcon_meta'
+[0.373s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['ros']
+[0.374s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ros'
+[0.375s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['cmake', 'python']
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'cmake'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'python'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['python_setup_py']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'python_setup_py'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore'
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore_ament_install'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_pkg']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_pkg'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_meta']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_meta'
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ros']
+[0.379s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ros'
+[0.387s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_srvcli' with type 'ros.ament_cmake' and name 'cpp_srvcli'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['ignore', 'ignore_ament_install']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'ignore'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'colcon_pkg'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'ros'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['cmake', 'python']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'cmake'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'python'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extensions ['python_setup_py']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(husky) by extension 'python_setup_py'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extensions ['ignore', 'ignore_ament_install']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extension 'ignore'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extension 'ignore_ament_install'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extensions ['colcon_pkg']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extension 'colcon_pkg'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extensions ['colcon_meta']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extension 'colcon_meta'
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extensions ['ros']
+[0.395s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_control) by extension 'ros'
+[0.398s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_control' with type 'ros.catkin' and name 'husky_control'
+[0.398s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extensions ['ignore', 'ignore_ament_install']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extension 'ignore'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extension 'ignore_ament_install'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extensions ['colcon_pkg']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extension 'colcon_pkg'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extensions ['colcon_meta']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extension 'colcon_meta'
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extensions ['ros']
+[0.399s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_description) by extension 'ros'
+[0.402s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_description' with type 'ros.catkin' and name 'husky_description'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extension 'ignore_ament_install'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extensions ['colcon_pkg']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extension 'colcon_pkg'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extensions ['colcon_meta']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extension 'colcon_meta'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extensions ['ros']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_desktop) by extension 'ros'
+[0.405s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_desktop' with type 'ros.catkin' and name 'husky_desktop'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extension 'ignore_ament_install'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extensions ['colcon_pkg']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extension 'colcon_pkg'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extensions ['colcon_meta']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_gazebo) by extension 'ros'
+[0.411s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_gazebo' with type 'ros.catkin' and name 'husky_gazebo'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extension 'ignore'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extension 'ignore_ament_install'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extensions ['colcon_pkg']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extension 'colcon_pkg'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extensions ['colcon_meta']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extension 'colcon_meta'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extensions ['ros']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_msgs) by extension 'ros'
+[0.414s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_msgs' with type 'ros.catkin' and name 'husky_msgs'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extension 'colcon_pkg'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extensions ['colcon_meta']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extension 'colcon_meta'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extensions ['ros']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_navigation) by extension 'ros'
+[0.418s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_navigation' with type 'ros.catkin' and name 'husky_navigation'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extension 'ignore'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extension 'ignore_ament_install'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extensions ['colcon_pkg']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extension 'colcon_pkg'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extensions ['colcon_meta']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extension 'colcon_meta'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extensions ['ros']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_simulator) by extension 'ros'
+[0.420s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_simulator' with type 'ros.catkin' and name 'husky_simulator'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(husky/husky_viz) by extension 'ros'
+[0.424s] DEBUG:colcon.colcon_core.package_identification:Package 'husky/husky_viz' with type 'ros.catkin' and name 'husky_viz'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['ros']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ros'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['cmake', 'python']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'cmake'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'python_setup_py'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ros'
+[0.430s] DEBUG:colcon.colcon_core.package_identification:Package 'radar_conti_ars408/src' with type 'ros.ament_cmake' and name 'radar_conti_ars408'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ros'
+[0.434s] DEBUG:colcon.colcon_core.package_identification:Package 'radar_conti_ars408_msgs' with type 'ros.ament_cmake' and name 'radar_conti_ars408_msgs'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ignore'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ignore_ament_install'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['colcon_pkg']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'colcon_pkg'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['colcon_meta']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'colcon_meta'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['ros']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ros'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['cmake', 'python']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'cmake'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'python'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['python_setup_py']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'python_setup_py'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['ros']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ros'
+[0.437s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_socketcan_bridge/can_msgs' with type 'ros.ament_cmake' and name 'can_msgs'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_socketcan_bridge/ros2socketcan_bridge' with type 'ros.ament_cmake' and name 'ros2socketcan_bridge'
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.443s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.492s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/offroad/radar_ws/install
+[0.494s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 303 installed packages in /opt/ros/foxy
+[0.526s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_target' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.686s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.686s] DEBUG:colcon.colcon_core.verb:Building package 'can_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/can_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/can_msgs', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_target' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.687s] DEBUG:colcon.colcon_core.verb:Building package 'husky_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_description', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_description', 'symlink_install': False, 'test_result_base': None}
+[0.687s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_target' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'husky_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.688s] DEBUG:colcon.colcon_core.verb:Building package 'husky_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_msgs', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_target' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'husky_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.690s] DEBUG:colcon.colcon_core.verb:Building package 'husky_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_navigation', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_target' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.694s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.694s] DEBUG:colcon.colcon_core.verb:Building package 'radar_conti_ars408_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/radar_conti_ars408_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_args' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target' from command line to 'None'
+[0.695s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[0.696s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.696s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/cpp_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/cpp_srvcli', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/cpp_srvcli', 'symlink_install': False, 'test_result_base': None}
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_target' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.697s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.698s] Level 5:colcon.colcon_core.verb:set package 'husky_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.698s] DEBUG:colcon.colcon_core.verb:Building package 'husky_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_control', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_control', 'symlink_install': False, 'test_result_base': None}
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_args' from command line to 'None'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_target' from command line to 'None'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_clean_first' from command line to 'False'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'cmake_force_configure' from command line to 'False'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'ament_cmake_args' from command line to 'None'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.700s] Level 5:colcon.colcon_core.verb:set package 'husky_viz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.700s] DEBUG:colcon.colcon_core.verb:Building package 'husky_viz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_viz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_viz', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_viz', 'symlink_install': False, 'test_result_base': None}
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_args' from command line to 'None'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_target' from command line to 'None'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.701s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.701s] DEBUG:colcon.colcon_core.verb:Building package 'ros2socketcan_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/ros2socketcan_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/ros2socketcan_bridge', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/ros2_socketcan_bridge/ros2socketcan_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_args' from command line to 'None'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_target' from command line to 'None'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_clean_first' from command line to 'False'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'cmake_force_configure' from command line to 'False'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'ament_cmake_args' from command line to 'None'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.702s] Level 5:colcon.colcon_core.verb:set package 'husky_desktop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.702s] DEBUG:colcon.colcon_core.verb:Building package 'husky_desktop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_desktop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_desktop', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_desktop', 'symlink_install': False, 'test_result_base': None}
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.703s] Level 5:colcon.colcon_core.verb:set package 'husky_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.703s] DEBUG:colcon.colcon_core.verb:Building package 'husky_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_gazebo', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_args' from command line to 'None'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target' from command line to 'None'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_cache' from command line to 'False'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_first' from command line to 'False'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_force_configure' from command line to 'False'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'ament_cmake_args' from command line to 'None'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_cmake_args' from command line to 'None'
+[0.704s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.704s] DEBUG:colcon.colcon_core.verb:Building package 'radar_conti_ars408' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/radar_conti_ars408', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/radar_conti_ars408', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/radar_conti_ars408/src', 'symlink_install': False, 'test_result_base': None}
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_args' from command line to 'None'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_target' from command line to 'None'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_clean_first' from command line to 'False'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'cmake_force_configure' from command line to 'False'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'ament_cmake_args' from command line to 'None'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.705s] Level 5:colcon.colcon_core.verb:set package 'husky_simulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.705s] DEBUG:colcon.colcon_core.verb:Building package 'husky_simulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/husky_simulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/husky_simulator', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/husky/husky_simulator', 'symlink_install': False, 'test_result_base': None}
+[0.706s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.712s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.713s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/offroad/radar_ws/src/husky/husky_description' with build type 'catkin'
+[0.713s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/husky/husky_description'
+[0.719s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.719s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.719s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.732s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs' with build type 'ament_cmake'
+[0.733s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs'
+[0.734s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.734s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.745s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/radar_conti_ars408_msgs' with build type 'ament_cmake'
+[0.746s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/radar_conti_ars408_msgs'
+[0.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.750s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.763s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/offroad/radar_ws/src/husky/husky_msgs' with build type 'catkin'
+[0.764s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/husky/husky_msgs'
+[0.766s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.766s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.784s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/offroad/radar_ws/src/husky/husky_navigation' with build type 'catkin'
+[0.786s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/husky/husky_navigation'
+[0.788s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.788s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/husky_description': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description
+[0.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/can_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/can_msgs
+[0.934s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/radar_conti_ars408_msgs -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs
+[0.952s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/husky_msgs': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_msgs
+[0.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/husky_navigation': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_navigation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_navigation
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/husky_description' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description
+[1.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/husky_msgs' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_msgs
+[1.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/husky_navigation' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_navigation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_navigation
+[1.157s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(husky_description)
+[1.190s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description' for CMake module files
+[1.192s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description' for CMake config files
+[1.195s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description/bin'
+[1.196s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description/lib/pkgconfig/husky_description.pc'
+[1.198s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description/lib/python3.8/site-packages'
+[1.199s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/husky_description/bin'
+[1.203s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/husky_description/share/husky_description/package.ps1'
+[1.209s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/husky_description/share/husky_description/package.dsv'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/husky_description/share/husky_description/package.sh'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/husky_description/share/husky_description/package.bash'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/husky_description/share/husky_description/package.zsh'
+[1.234s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/husky_description/share/colcon-core/packages/husky_description)
+[5.633s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.633s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.634s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[5.635s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.646s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.647s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.647s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.671s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.ps1'
+[5.675s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/src/install/_local_setup_util_ps1.py'
+[5.678s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.ps1'
+[5.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.sh'
+[5.681s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/src/install/_local_setup_util_sh.py'
+[5.681s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.sh'
+[5.683s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.bash'
+[5.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.bash'
+[5.687s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.zsh'
+[5.687s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.zsh'

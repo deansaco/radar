@@ -25,10 +25,12 @@
 #include "std_msgs/msg/string.hpp"
 #include "sensor_msgs/msg/nav_sat_fix.hpp"
 #include <ament_index_cpp/get_package_share_directory.hpp>
+#include <radar_conti_ars408_msgs/msg/filter_state_cfg.hpp>
+#include <radar_conti_ars408_msgs/msg/filter_state_header.hpp>
+#include <radar_conti_ars408_msgs/msg/filter_cfg.hpp>
 
-#//
-
-//include "radar_conti_ars408_msgs/msg/object_list.hpp"
+//do i need this line below???
+#include <radar_conti_ars408_msgs/msg/object_list.hpp>
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -56,7 +58,13 @@ rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn radar_
     tf_publisher_ = this->create_publisher<tf2_msgs::msg::TFMessage>(pub_tf_topic_name, qos);
     marker_array_publisher_ = this->create_publisher<visualization_msgs::msg::MarkerArray>(pub_marker_array_topic_name, qos);
 
+    filter_state_cfg_publisher_= this->create_publisher<radar_conti_ars408_msgs::msg::FilterStateCfg>(filter, qos);
+    filter_cfg_publisher_= this->create_publisher<radar_conti_ars408_msgs::msg::FilterCfg>(filtercfg, qos);
+    filter_state_header_publisher_= this->create_publisher<radar_conti_ars408_msgs::msg::FilterStateHeader>(fsh, qos);
 
+    //config_publisher_=this->create_publisher<radar_conti_ars408_msgs::msg::RadarConfiguration>(pub_configuration, qos);
+//added for filter
+    //filter_config_publisher_ =this->create_publisher<radar_conti_ars408_msgs::msg::FilterStateCfg>(pub_filter_config, qos);
 // Initialise CAN subscriber
 //channel name: can0
     canChannel0.Init("can0", std::bind(&radar_conti_ars408::can_receive_callback, this, _1));
@@ -127,7 +135,12 @@ rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn radar_
     object_list_publisher_->on_activate();
     tf_publisher_->on_activate();
     marker_array_publisher_->on_activate();
-
+    filter_cfg_publisher_->on_activate();
+    filter_state_cfg_publisher_->on_activate();
+    filter_state_header_publisher_->on_activate();
+    //config_publisher_-> on_activate();
+    //added for filter
+    //filter_config_publisher_->on_activate();
     // ##################################
 
     RCUTILS_LOG_INFO_NAMED(get_name(), "on_activate() is called.");
@@ -193,15 +206,15 @@ void radar_conti_ars408::can_receive_callback(const can_msgs::msg::Frame msg)
 
 }
 
-void toClass(int index){
-    if (index == 0){
-        printf("point");
-    }
-    else if (index==1){
-        printf("car");
-    }
+// void toClass(int index){
+//     if (index == 0){
+//         printf("point");
+//     }
+//     else if (index==1){
+//         printf("car");
+//     }
 
-}
+// }
 
 // map<int, string> classmap;
 // classmap.insert({0, "point"});
@@ -232,7 +245,9 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                 publish_object_map();
 
                 object_list_.header.stamp = rclcpp_lifecycle::LifecycleNode::now();
-                object_list_.object_count.data = GET_Obj_0_Status_Obj_NofObjects(msg.data);
+                object_list_.object_count.data = CALC_Obj_0_Status_Obj_NofObjects(GET_Obj_0_Status_Obj_NofObjects(msg.data),1.0);
+                
+                RCLCPP_INFO(this->get_logger(), "Object Count: 0x%d", object_list_.object_count.data);
 
                 object_map_.clear();
 
@@ -248,6 +263,7 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
             //see ars_408_can_defines.h
 
             if (msg.id == ID_Obj_1_General) {
+                radar_conti_ars408_msgs::msg::FilterCfg fcfg;
 
                 radar_conti_ars408_msgs::msg::Object o;
 
@@ -258,11 +274,12 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                 //RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%d", o.obj_id.data);
  
 
+
                 //longitudinal distance
                 o.object_general.obj_distlong.data =
                         CALC_Obj_1_General_Obj_DistLong(GET_Obj_1_General_Obj_DistLong(msg.data), 1.0);
 
-                RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%d \n Object_dist_long: 0x%0.4f m", o.obj_id.data, o.object_general.obj_distlong.data);
+                //RCLCPP_INFO(this->get_logger(), "Object_ID: 0x%d \n Object_dist_long: 0x%0.4f m", o.obj_id.data, o.object_general.obj_distlong.data);
 
                 //lateral distance
                 o.object_general.obj_distlat.data =
@@ -278,7 +295,7 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
 
                 o.object_general.obj_dynprop.data =
                         CALC_Obj_1_General_Obj_DynProp(GET_Obj_1_General_Obj_DynProp(msg.data), 1.0);
-                RCLCPP_INFO(this->get_logger(), "Object Dynamic Property: %d", o.object_general.obj_dynprop.data);
+                //RCLCPP_INFO(this->get_logger(), "Object Dynamic Property: %d", o.object_general.obj_dynprop.data);
 
                 o.object_general.obj_rcs.data = 
                         CALC_Obj_1_General_Obj_RCS(GET_Obj_1_General_Obj_RCS(msg.data), 1.0);
@@ -288,6 +305,13 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                 //line below delete???
                 //object_map_.insert(std::pair<string, radar_conti_ars408_msgs::msg::Object>(id, o));
             }
+
+            //radar_conti_ars408_msgs::msg::FilterStateCfg c;
+            //radar_conti_ars408_msgs::msg::RadarState c;
+            //c.radarstate_maxdistancecfg.data = CALC_FilterState_Cfg_FilterState_Max_Distance(GET_FilterCfg_FilterCfg_Max_Distance(msg.data),1.0);
+            //RCLCPP_INFO(this->get_logger(), "max distance config: %d", c.radarstate_maxdistancecfg.data);
+            // c.filtercfg_min_nofobj.data = CALC_FilterState_Header_FilterState_NofObjectFilterCfg(GET_FilterState_Header_FilterState_NofObjectFilterCfg(msg.data), 1.0);
+            // RCLCPP_INFO(this->get_logger(), "min objects: %d", c.filtercfg_min_nobj.data);
 
             //Object Quality Information
             //for each Obj_2_Quality message the existing object in the map has to be updated
@@ -309,7 +333,11 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
  
                 object_map_[id].object_quality.obj_vrellat_rms.data =
                         CALC_Obj_2_Quality_Obj_VrelLat_rms(GET_Obj_2_Quality_Obj_VrelLat_rms(msg.data), 1.0);
-                                
+
+                
+                object_map_[id].object_quality.obj_probofexist.data =
+                        CALC_Obj_2_Quality_Obj_ProbOfExist(GET_Obj_2_Quality_Obj_ProbOfExist(msg.data), 1.0);
+                //RCLCPP_INFO(this->get_logger(), "prob of existence %0.4f", object_map_[id].object_quality.obj_probofexist.data);
 
             }
 
@@ -330,7 +358,7 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                 object_map_[id].object_extended.obj_class.data =
                         CALC_Obj_3_Extended_Obj_Class(GET_Obj_3_Extended_Obj_Class(msg.data), 1.0);
                 //return static_cast<int>(object_map_[id].object_extended.obj_class.data);
-                RCLCPP_INFO(this->get_logger(), "Object Class: %d", object_map_[id].object_extended.obj_class.data);
+               // RCLCPP_INFO(this->get_logger(), "Object Class: %d", object_map_[id].object_extended.obj_class.data);
                 
                 object_map_[id].object_extended.obj_orientationangle.data =
                         CALC_Obj_3_Extended_Obj_OrientationAngle(GET_Obj_3_Extended_Obj_OrientationAngle(msg.data),
@@ -343,9 +371,28 @@ void radar_conti_ars408::handle_object_list(const can_msgs::msg::Frame msg) {
                         CALC_Obj_3_Extended_Obj_Width(GET_Obj_3_Extended_Obj_Width(msg.data), 1.0);
             }
 
+
+
+
 // ##################################
 
 }
+
+
+void radar_conti_ars408::handle_filter_state_config(const can_msgs::msg::Frame msg){
+    radar_conti_ars408_msgs::msg::FilterStateCfg f;
+    radar_conti_ars408_msgs::msg::FilterStateHeader fh;
+
+    f.filtercfg_min_nofobj.data = CALC_FilterState_Cfg_FilterState_Min_NofObj(GET_FilterState_Cfg_FilterState_Min_NofObj(msg.data), 1.0);
+    f.filtercfg_active.data = CALC_FilterState_Cfg_FilterState_Active(GET_FilterState_Cfg_FilterState_Active(msg.data),1.0);
+    f.filtercfg_type.data = CALC_FilterState_Cfg_FilterState_Type(GET_FilterState_Cfg_FilterState_Type(msg.data),1.0);
+
+    fh.filterstate_nofclusterfiltercfg.data = CALC_FilterState_Header_FilterState_NofClusterFilterCfg(GET_FilterState_Header_FilterState_NofClusterFilterCfg(msg.data),1.0);
+    fh.filterstate_nofobjectfiltercfg.data = CALC_FilterState_Header_FilterState_NofObjectFilterCfg(GET_FilterState_Header_FilterState_NofObjectFilterCfg(msg.data),1.0);
+
+}
+
+
 
 void radar_conti_ars408::publish_object_map() {
 
@@ -355,6 +402,8 @@ void radar_conti_ars408::publish_object_map() {
 // 2. publish transforms & Objects
 
                 //TFMessage object created
+                //transform between sensor and detected objects
+                //translation.x is the distance to an object in x direction
                 tf2_msgs::msg::TFMessage transforms;
                 
                 //define iterator for map
@@ -392,7 +441,6 @@ void radar_conti_ars408::publish_object_map() {
                 object_list_publisher_->publish(object_list_);
                 tf_publisher_->publish(transforms);
 
-
 // 3. create marker array
 // 4. create marker
 // 5. delete old marker (marker.action=3 and publish)
@@ -411,48 +459,53 @@ void radar_conti_ars408::publish_object_map() {
                 marker_array.markers.clear();
 
                 //marker for ego car
-                visualization_msgs::msg::Marker mEgoCar;
+                // visualization_msgs::msg::Marker mEgoCar;
 
-                mEgoCar.header.stamp = rclcpp_lifecycle::LifecycleNode::now();
-                mEgoCar.header.frame_id = frame_id_;
-                mEgoCar.ns = "";
-                mEgoCar.id = 999;
+                // mEgoCar.header.stamp = rclcpp_lifecycle::LifecycleNode::now();
+                // //frame_id_ is equal to the /radar_link frame
+                // mEgoCar.header.frame_id = frame_id_;
+                // mEgoCar.ns = "";
+                // mEgoCar.id = 999;
 
-                //if you want to use a cube comment out the next 2 lines
+                // //if you want to use a cube comment out the next 2 lines
                 
-                mEgoCar.type = visualization_msgs::msg::Marker::MESH_RESOURCE;
-                mEgoCar.mesh_resource = "file://"+ament_index_cpp::get_package_share_directory("radar_conti_ars408")+"/resources/low_poly_911.dae";
-                
-                //mEgoCar.type = 1; // cube
-                mEgoCar.action = 0; // add/modify
-                //assuming no navigation, the vehicle is located here:
-                mEgoCar.pose.position.x = -2.0;
-                mEgoCar.pose.position.y = 0.0;
-                mEgoCar.pose.position.z = 1.0;
+                // //mEgoCar.type = visualization_msgs::msg::Marker::MESH_RESOURCE;
+                // //mEgoCar.mesh_resource = "file://"+ament_index_cpp::get_package_share_directory("radar_conti_ars408")+"/resources/low_poly_911.dae";
+                // //mEgoCar.mesh_resource= "file://"+ament_index_cpp::get_package_share_directory("meshes")+"/base_link.dae";
+
+                // //how do i set the mEgoCar to the husky_base
+                // //mEgoCar.type = 1; // cube
+                // mEgoCar.action = 0; // add/modify
+
+                // //assuming no navigation, the vehicle is located here:
+                // //how to change this for navigation????
+                // mEgoCar.pose.position.x = -2.0;
+                // mEgoCar.pose.position.y = 0.0;
+                // mEgoCar.pose.position.z = 1.0;
 
                 tf2::Quaternion myQuaternion;
 
-                //set row, pitch, yaw set to 0, no rotation performed
-                myQuaternion.setRPY(0, 0, M_PI/2);
-                //orientation, scale, color, lifetime
-                mEgoCar.pose.orientation.w = myQuaternion.getW();
-                mEgoCar.pose.orientation.x = myQuaternion.getX();
-                mEgoCar.pose.orientation.y = myQuaternion.getY();
-                mEgoCar.pose.orientation.z = myQuaternion.getZ();
-                mEgoCar.scale.x = 1.0;
-                mEgoCar.scale.y = 1.0;
-                mEgoCar.scale.z = 1.0;
-                mEgoCar.color.r = 0.0;
-                mEgoCar.color.g = 0.0;
-                mEgoCar.color.b = 1.0;
-                mEgoCar.color.a = 1.0;
-                mEgoCar.lifetime = rclcpp::Duration(0.2);
-                mEgoCar.frame_locked = false;
+                // //set row, pitch, yaw set to 0, no rotation performed
+                // myQuaternion.setRPY(0, 0, M_PI/2);
+                // //orientation, scale, color, lifetime
+                // mEgoCar.pose.orientation.w = myQuaternion.getW();
+                // mEgoCar.pose.orientation.x = myQuaternion.getX();
+                // mEgoCar.pose.orientation.y = myQuaternion.getY();
+                // mEgoCar.pose.orientation.z = myQuaternion.getZ();
+                // mEgoCar.scale.x = 1.0;
+                // mEgoCar.scale.y = 1.0;
+                // mEgoCar.scale.z = 1.0;
+                // mEgoCar.color.r = 0.0;
+                // mEgoCar.color.g = 0.0;
+                // mEgoCar.color.b = 1.0;
+                // mEgoCar.color.a = 1.0;
+                // mEgoCar.lifetime = rclcpp::Duration(0.2);
+                // mEgoCar.frame_locked = false;
 
 
 
 
-                marker_array.markers.push_back(mEgoCar);
+                // marker_array.markers.push_back(mEgoCar);
                 //itr-> first is the map id ---   itr->second is the data
                 for (itr = object_map_.begin(); itr != object_map_.end(); ++itr) {
                     //marker for object bounding box
@@ -533,7 +586,10 @@ void radar_conti_ars408::publish_object_map() {
 
                 }
                 marker_array_publisher_->publish(marker_array);
-            
+                filter_state_cfg_publisher_->publish(filter_state_cfg_list);
+                filter_cfg_publisher_->publish(filter_cfg_list_);
+                filter_state_header_publisher_->publish(filter_state_header_list);
+
 // ##################################
 
 }

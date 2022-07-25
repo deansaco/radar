@@ -1,0 +1,460 @@
+[0.194s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.195s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fdb04930c10>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fdb04930c10>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fdb048ba1c0>)
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.230s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.230s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/offroad/radar_ws/src'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'python'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extensions ['python_setup_py']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(CAN_Recording) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(cpp_srvcli) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Package 'cpp_srvcli' with type 'ros.ament_cmake' and name 'cpp_srvcli'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'ignore'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'ignore_ament_install'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['colcon_pkg']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'colcon_pkg'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['colcon_meta']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'colcon_meta'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['ros']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(meshes/accessories) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['ros']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408/src) by extension 'ros'
+[0.262s] DEBUG:colcon.colcon_core.package_identification:Package 'radar_conti_ars408/src' with type 'ros.ament_cmake' and name 'radar_conti_ars408'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ignore'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ignore_ament_install'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['colcon_pkg']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'colcon_pkg'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['colcon_meta']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'colcon_meta'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extensions ['ros']
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(radar_conti_ars408_msgs) by extension 'ros'
+[0.263s] DEBUG:colcon.colcon_core.package_identification:Package 'radar_conti_ars408_msgs' with type 'ros.ament_cmake' and name 'radar_conti_ars408_msgs'
+[0.263s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['colcon_meta']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'colcon_meta'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['ros']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'ros'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['cmake', 'python']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'cmake'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'python'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extensions ['python_setup_py']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge) by extension 'python_setup_py'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/can_msgs) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_socketcan_bridge/can_msgs' with type 'ros.ament_cmake' and name 'can_msgs'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ignore_ament_install'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_pkg']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_pkg'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_socketcan_bridge/ros2socketcan_bridge) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_socketcan_bridge/ros2socketcan_bridge' with type 'ros.ament_cmake' and name 'ros2socketcan_bridge'
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.387s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/offroad/radar_ws/install
+[0.389s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 303 installed packages in /opt/ros/foxy
+[0.391s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_args' from command line to 'None'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_target' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'can_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.534s] DEBUG:colcon.colcon_core.verb:Building package 'can_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/can_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/can_msgs', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_args' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_target' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.535s] DEBUG:colcon.colcon_core.verb:Building package 'radar_conti_ars408_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/radar_conti_ars408_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_cache' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_clean_first' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'cmake_force_configure' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'ament_cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'cpp_srvcli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.536s] DEBUG:colcon.colcon_core.verb:Building package 'cpp_srvcli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/cpp_srvcli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/cpp_srvcli', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/cpp_srvcli', 'symlink_install': False, 'test_result_base': None}
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_target' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'ros2socketcan_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.536s] DEBUG:colcon.colcon_core.verb:Building package 'ros2socketcan_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/ros2socketcan_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/ros2socketcan_bridge', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/ros2_socketcan_bridge/ros2socketcan_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_args' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_cache' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_clean_first' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'cmake_force_configure' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'ament_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'radar_conti_ars408' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.538s] DEBUG:colcon.colcon_core.verb:Building package 'radar_conti_ars408' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/offroad/radar_ws/src/build/radar_conti_ars408', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/offroad/radar_ws/src/install/radar_conti_ars408', 'merge_install': False, 'path': '/home/offroad/radar_ws/src/radar_conti_ars408/src', 'symlink_install': False, 'test_result_base': None}
+[0.539s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.545s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.546s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs' with build type 'ament_cmake'
+[0.546s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs'
+[0.550s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.550s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.550s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.561s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/radar_conti_ars408_msgs' with build type 'ament_cmake'
+[0.561s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/radar_conti_ars408_msgs'
+[0.564s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.564s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/can_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/src/build/can_msgs -- -j12 -l12
+[0.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408_msgs -- -j12 -l12
+[1.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/can_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/src/build/can_msgs -- -j12 -l12
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408_msgs -- -j12 -l12
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/can_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/src/build/can_msgs
+[1.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_msgs)
+[1.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/can_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/src/build/can_msgs
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs' for CMake module files
+[1.692s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs' for CMake config files
+[1.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'cmake_prefix_path')
+[1.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.ps1'
+[1.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.sh'
+[1.702s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib'
+[1.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'ld_library_path_lib')
+[1.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.ps1'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.dsv'
+[1.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.sh'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/bin'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib/pkgconfig/can_msgs.pc'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages'
+[1.706s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'pythonpath')
+[1.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.ps1'
+[1.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.dsv'
+[1.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.sh'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/bin'
+[1.735s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.ps1'
+[1.736s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.dsv'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.sh'
+[1.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.bash'
+[1.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.zsh'
+[1.741s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/can_msgs/share/colcon-core/packages/can_msgs)
+[1.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_msgs)
+[1.849s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs' for CMake module files
+[1.850s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs' for CMake config files
+[1.852s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'cmake_prefix_path')
+[1.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.ps1'
+[1.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.dsv'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/cmake_prefix_path.sh'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib'
+[1.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'ld_library_path_lib')
+[1.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.ps1'
+[1.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.dsv'
+[1.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/ld_library_path_lib.sh'
+[1.862s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/bin'
+[1.862s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib/pkgconfig/can_msgs.pc'
+[1.862s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages'
+[1.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_msgs', 'pythonpath')
+[1.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.ps1'
+[1.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.dsv'
+[1.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/hook/pythonpath.sh'
+[1.864s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/can_msgs/bin'
+[1.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.ps1'
+[1.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.dsv'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.sh'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.bash'
+[1.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/package.zsh'
+[1.872s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/can_msgs/share/colcon-core/packages/can_msgs)
+[1.874s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/ros2socketcan_bridge' with build type 'ament_cmake'
+[1.874s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/ros2_socketcan_bridge/ros2socketcan_bridge'
+[1.876s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.877s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/ros2socketcan_bridge': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/ros2socketcan_bridge -- -j12 -l12
+[2.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/ros2socketcan_bridge' returned '0': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/ros2socketcan_bridge -- -j12 -l12
+[2.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/ros2socketcan_bridge': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/offroad/radar_ws/src/build/ros2socketcan_bridge
+[2.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2socketcan_bridge)
+[2.106s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge' for CMake module files
+[2.107s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/ros2socketcan_bridge' returned '0': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/offroad/radar_ws/src/build/ros2socketcan_bridge
+[2.107s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge' for CMake config files
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2socketcan_bridge', 'cmake_prefix_path')
+[2.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.ps1'
+[2.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.dsv'
+[2.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.sh'
+[2.114s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/bin'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib/pkgconfig/ros2socketcan_bridge.pc'
+[2.115s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib/python3.8/site-packages'
+[2.116s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/bin'
+[2.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.ps1'
+[2.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.dsv'
+[2.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.sh'
+[2.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.bash'
+[2.122s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.zsh'
+[2.122s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/colcon-core/packages/ros2socketcan_bridge)
+[2.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/src/build/radar_conti_ars408_msgs
+[2.175s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2socketcan_bridge)
+[2.181s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge' for CMake module files
+[2.189s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge' for CMake config files
+[2.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2socketcan_bridge', 'cmake_prefix_path')
+[2.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.ps1'
+[2.199s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.dsv'
+[2.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/hook/cmake_prefix_path.sh'
+[2.206s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib'
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/bin'
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib/pkgconfig/ros2socketcan_bridge.pc'
+[2.207s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/lib/python3.8/site-packages'
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/bin'
+[2.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.ps1'
+[2.215s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.dsv'
+[2.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.sh'
+[2.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.bash'
+[2.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/package.zsh'
+[2.231s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/colcon-core/packages/ros2socketcan_bridge)
+[2.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(radar_conti_ars408_msgs)
+[2.329s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs' for CMake module files
+[2.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/radar_conti_ars408_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/offroad/radar_ws/src/build/radar_conti_ars408_msgs
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs' for CMake config files
+[2.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'cmake_prefix_path')
+[2.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.ps1'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.dsv'
+[2.333s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.sh'
+[2.336s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib'
+[2.336s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'ld_library_path_lib')
+[2.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.ps1'
+[2.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.dsv'
+[2.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.sh'
+[2.340s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/bin'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/pkgconfig/radar_conti_ars408_msgs.pc'
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages'
+[2.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'pythonpath')
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.ps1'
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.dsv'
+[2.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.sh'
+[2.343s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/bin'
+[2.344s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.ps1'
+[2.344s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.dsv'
+[2.345s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.sh'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.bash'
+[2.349s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.zsh'
+[2.350s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/colcon-core/packages/radar_conti_ars408_msgs)
+[2.883s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(radar_conti_ars408_msgs)
+[2.884s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs' for CMake module files
+[2.885s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs' for CMake config files
+[2.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'cmake_prefix_path')
+[2.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.ps1'
+[2.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.dsv'
+[2.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/cmake_prefix_path.sh'
+[2.888s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib'
+[2.888s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'ld_library_path_lib')
+[2.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.ps1'
+[2.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.dsv'
+[2.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/ld_library_path_lib.sh'
+[2.889s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/bin'
+[2.890s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/pkgconfig/radar_conti_ars408_msgs.pc'
+[2.890s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages'
+[2.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('radar_conti_ars408_msgs', 'pythonpath')
+[2.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.ps1'
+[2.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.dsv'
+[2.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/hook/pythonpath.sh'
+[2.895s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/bin'
+[2.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.ps1'
+[2.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.dsv'
+[2.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.sh'
+[2.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.bash'
+[2.900s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/package.zsh'
+[2.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/colcon-core/packages/radar_conti_ars408_msgs)
+[2.901s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/cpp_srvcli' with build type 'ament_cmake'
+[2.902s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/cpp_srvcli'
+[2.904s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.904s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.915s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/offroad/radar_ws/src/radar_conti_ars408/src' with build type 'ament_cmake'
+[2.915s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/offroad/radar_ws/src/radar_conti_ars408/src'
+[2.917s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/cpp_srvcli': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/cpp_srvcli -- -j12 -l12
+[2.956s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408 -- -j12 -l12
+[3.125s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/cpp_srvcli' returned '0': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/cpp_srvcli -- -j12 -l12
+[3.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/offroad/radar_ws/src/build/cpp_srvcli': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/offroad/radar_ws/src/build/cpp_srvcli
+[3.223s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli' for CMake module files
+[3.225s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/cpp_srvcli' returned '0': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/offroad/radar_ws/src/build/cpp_srvcli
+[3.226s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli' for CMake config files
+[3.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[3.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[3.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[3.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[3.235s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib'
+[3.236s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/bin'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[3.238s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib/python3.8/site-packages'
+[3.238s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/bin'
+[3.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[3.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[3.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[3.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[3.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cpp_srvcli)
+[3.303s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli' for CMake module files
+[3.304s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli' for CMake config files
+[3.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('cpp_srvcli', 'cmake_prefix_path')
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.ps1'
+[3.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.dsv'
+[3.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/hook/cmake_prefix_path.sh'
+[3.312s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib'
+[3.312s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/bin'
+[3.312s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib/pkgconfig/cpp_srvcli.pc'
+[3.313s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/lib/python3.8/site-packages'
+[3.313s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/cpp_srvcli/bin'
+[3.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.ps1'
+[3.318s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.dsv'
+[3.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.sh'
+[3.319s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.bash'
+[3.320s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/cpp_srvcli/share/cpp_srvcli/package.zsh'
+[3.320s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/cpp_srvcli/share/colcon-core/packages/cpp_srvcli)
+[10.158s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/offroad/radar_ws/src/build/radar_conti_ars408' returned '2': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408 -- -j12 -l12
+[10.236s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(radar_conti_ars408)
+[10.240s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408' for CMake module files
+[10.241s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408' for CMake config files
+[10.241s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408/bin'
+[10.242s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408/lib/pkgconfig/radar_conti_ars408.pc'
+[10.242s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408/lib/python3.8/site-packages'
+[10.242s] Level 1:colcon.colcon_core.environment:checking '/home/offroad/radar_ws/src/install/radar_conti_ars408/bin'
+[10.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408/share/radar_conti_ars408/package.ps1'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/offroad/radar_ws/src/install/radar_conti_ars408/share/radar_conti_ars408/package.dsv'
+[10.244s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408/share/radar_conti_ars408/package.sh'
+[10.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408/share/radar_conti_ars408/package.bash'
+[10.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/offroad/radar_ws/src/install/radar_conti_ars408/share/radar_conti_ars408/package.zsh'
+[10.247s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/offroad/radar_ws/src/install/radar_conti_ars408/share/colcon-core/packages/radar_conti_ars408)
+[10.258s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.258s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.259s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[10.259s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.268s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.269s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.270s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.297s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.298s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.ps1'
+[10.298s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/src/install/_local_setup_util_ps1.py'
+[10.300s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.ps1'
+[10.305s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.sh'
+[10.306s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/offroad/radar_ws/src/install/_local_setup_util_sh.py'
+[10.306s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.sh'
+[10.308s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.bash'
+[10.308s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.bash'
+[10.311s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/offroad/radar_ws/src/install/local_setup.zsh'
+[10.313s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/offroad/radar_ws/src/install/setup.zsh'

@@ -1,0 +1,1 @@
+Invoking command in '/home/offroad/radar_ws/src/build/can_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/offroad/radar_ws/src/ros2_socketcan_bridge/can_msgs -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/can_msgs

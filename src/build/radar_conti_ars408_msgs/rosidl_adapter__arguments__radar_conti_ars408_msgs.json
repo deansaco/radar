@@ -1,0 +1,24 @@
+{
+  "package_name": "radar_conti_ars408_msgs",
+  "non_idl_tuples": [
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ClusterGeneral.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ClusterQuality.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ClusterStatus.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ObjectGeneral.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ObjectExtended.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ObjectQuality.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ObjectStatus.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/RadarConfiguration.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/RadarState.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/VersionID.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/Cluster.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/Object.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ClusterList.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/ObjectList.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/FilterStateCfg.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/FilterCfg.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/FilterStateHeader.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:msg/Num.msg",
+    "/home/offroad/radar_ws/src/radar_conti_ars408_msgs:srv/AddThreeInts.srv"
+  ]
+}

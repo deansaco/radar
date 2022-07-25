@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from radar_conti_ars408_msgs/srv/AddThreeInts.srv
+// generated code does not contain a copyright notice
+
+
+module radar_conti_ars408_msgs {
+  module srv {
+    struct AddThreeInts_Request {
+      int64 a;
+
+      int64 b;
+
+      int64 c;
+    };
+    struct AddThreeInts_Response {
+      int64 sum;
+    };
+  };
+};

@@ -1,0 +1,21 @@
+[0.081s] Invoking command in '/home/offroad/radar_ws/src/build/husky_description': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description
+[0.156s] -- Configuring incomplete, errors occurred!
+[0.157s] See also "/home/offroad/radar_ws/src/build/husky_description/CMakeFiles/CMakeOutput.log".
+[0.161s] CMake Error at CMakeLists.txt:4 (find_package):
+[0.165s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[0.167s]   asked CMake to find a package configuration file provided by "catkin", but
+[0.169s]   CMake did not find one.
+[0.171s] 
+[0.173s]   Could not find a package configuration file provided by "catkin" with any
+[0.174s]   of the following names:
+[0.174s] 
+[0.174s]     catkinConfig.cmake
+[0.182s]     catkin-config.cmake
+[0.183s] 
+[0.184s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[0.184s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[0.184s]   provides a separate development package or SDK, be sure it has been
+[0.188s]   installed.
+[0.190s] 
+[0.190s] 
+[0.191s] Invoked command in '/home/offroad/radar_ws/src/build/husky_description' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description

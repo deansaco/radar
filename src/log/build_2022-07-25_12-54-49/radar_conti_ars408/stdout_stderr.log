@@ -1,0 +1,26 @@
+-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found radar_conti_ars408_msgs: 0.0.0 (/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)
+-- Found rclcpp_lifecycle: 2.4.1 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found can_msgs: 0.0.0 (/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/cmake)
+-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found ros2socketcan_bridge: 0.0.0 (/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/cmake)
+CMake Error at CMakeLists.txt:120 (install):
+  install TARGETS given target "talker" which does not exist.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/offroad/radar_ws/src/build/radar_conti_ars408/CMakeFiles/CMakeOutput.log".
+See also "/home/offroad/radar_ws/src/build/radar_conti_ars408/CMakeFiles/CMakeError.log".
+make: *** [Makefile:398: cmake_check_build_system] Error 1

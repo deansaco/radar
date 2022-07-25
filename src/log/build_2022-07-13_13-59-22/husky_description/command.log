@@ -1,0 +1,2 @@
+Invoking command in '/home/offroad/radar_ws/src/build/husky_description': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description
+Invoked command in '/home/offroad/radar_ws/src/build/husky_description' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_description

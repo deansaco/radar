@@ -1,0 +1,9 @@
+CMake Error at CMakeLists.txt:120 (install):
+  install TARGETS given target "talker" which does not exist.
+
+
+CMake Error at CMakeLists.txt:129 (install):
+  install TARGETS given target "talker" which does not exist.
+
+
+make: *** [Makefile:398: cmake_check_build_system] Error 1

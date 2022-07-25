@@ -111,25 +111,25 @@ target_link_libraries(
   radar_conti_ars408_component
 )
 
-add_executable(talker src/publisher_member_function.cpp)
+#add_executable(talker src/publisher_member_function.cpp)
 #ament_target_dependencies(talker rclcpp std_msgs)
 
-ament_target_dependencies(talker rclcpp radar_conti_ars408_msgs)
+#ament_target_dependencies(talker rclcpp radar_conti_ars408_msgs)
 
 
-install(TARGETS
-  talker
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS
+#   talker
+#   DESTINATION lib/${PROJECT_NAME})
 
-add_executable(listener src/subscriber_member_function.cpp)
+#add_executable(listener src/subscriber_member_function.cpp)
 #ament_target_dependencies(listener rclcpp std_msgs)
-ament_target_dependencies(listener rclcpp radar_conti_ars408_msgs)
+#ament_target_dependencies(listener rclcpp radar_conti_ars408_msgs)
 
     
-install(TARGETS
-  talker
-  listener
-  DESTINATION lib/${PROJECT_NAME})
+# install(TARGETS
+#   talker
+#   listener
+#   DESTINATION lib/${PROJECT_NAME})
 
   
 ament_target_dependencies(radar_conti_ars408_composition

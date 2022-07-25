@@ -1,0 +1,91 @@
+[0.044s] Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/offroad/radar_ws/src/radar_conti_ars408/src -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/radar_conti_ars408
+[0.195s] -- The C compiler identification is GNU 9.4.0
+[0.313s] -- The CXX compiler identification is GNU 9.4.0
+[0.324s] -- Check for working C compiler: /usr/bin/cc
+[0.458s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.460s] -- Detecting C compiler ABI info
+[0.650s] -- Detecting C compiler ABI info - done
+[0.670s] -- Detecting C compile features
+[0.673s] -- Detecting C compile features - done
+[0.681s] -- Check for working CXX compiler: /usr/bin/c++
+[0.867s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.869s] -- Detecting CXX compiler ABI info
+[1.102s] -- Detecting CXX compiler ABI info - done
+[1.135s] -- Detecting CXX compile features
+[1.139s] -- Detecting CXX compile features - done
+[1.147s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.223s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.223s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.869s] -- Found radar_conti_ars408_msgs: 0.0.0 (/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/share/radar_conti_ars408_msgs/cmake)
+[2.104s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.124s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[2.386s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.458s] -- Found FastRTPS: /opt/ros/foxy/include  
+[2.655s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.866s] -- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+[2.879s] -- Found example_interfaces: 0.9.1 (/opt/ros/foxy/share/example_interfaces/cmake)
+[3.147s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[3.260s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.265s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.269s] -- Looking for pthread.h
+[3.480s] -- Looking for pthread.h - found
+[3.480s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.675s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[3.675s] -- Looking for pthread_create in pthreads
+[3.846s] -- Looking for pthread_create in pthreads - not found
+[3.847s] -- Looking for pthread_create in pthread
+[4.052s] -- Looking for pthread_create in pthread - found
+[4.056s] -- Found Threads: TRUE  
+[4.412s] -- Found rclcpp_components: 2.4.1 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[4.577s] -- Found rclcpp_lifecycle: 2.4.1 (/opt/ros/foxy/share/rclcpp_lifecycle/cmake)
+[4.670s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[4.754s] -- Found can_msgs: 0.0.0 (/home/offroad/radar_ws/src/install/can_msgs/share/can_msgs/cmake)
+[4.902s] -- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+[5.062s] -- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+[5.655s] -- Found ros2socketcan_bridge: 0.0.0 (/home/offroad/radar_ws/src/install/ros2socketcan_bridge/share/ros2socketcan_bridge/cmake)
+[5.938s] -- Configuring done
+[6.094s] -- Generating done
+[6.099s] -- Build files have been written to: /home/offroad/radar_ws/src/build/radar_conti_ars408
+[6.142s] Invoked command in '/home/offroad/radar_ws/src/build/radar_conti_ars408' returned '0': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/offroad/radar_ws/src/radar_conti_ars408/src -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/radar_conti_ars408
+[6.151s] Invoking command in '/home/offroad/radar_ws/src/build/radar_conti_ars408': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408 -- -j12 -l12
+[6.283s] [35m[1mScanning dependencies of target listener[0m
+[6.284s] [35m[1mScanning dependencies of target radar_conti_ars408_component[0m
+[6.288s] [35m[1mScanning dependencies of target talker[0m
+[6.400s] [ 12%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[6.433s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[6.480s] [ 37%] [32mBuilding CXX object CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o[0m
+[6.648s] In file included from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/radar_conti_ars408_component.hpp:24[m[K,
+[6.648s]                  from [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:14[m[K:
+[6.650s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:43:[m[K [01;35m[Kwarning: [m[K"RADAR_CONTI_ARS408_RADAR_CONTI_ARS408" redefined
+[6.651s]    43 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408
+[6.652s]       | 
+[6.652s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/../include/visibility_control.h:42:[m[K [01;36m[Knote: [m[Kthis is the location of the previous definition
+[6.654s]    42 |   #define RADAR_CONTI_ARS408_RADAR_CONTI_ARS408 __attribute__ ((visibility("default")))
+[6.656s]       | 
+[14.567s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_shutdown(const rclcpp_lifecycle::State&)[m[K’:
+[14.569s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:73:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.571s]    73 |   [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[14.571s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[14.572s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn FHAC::radar_conti_ars408::on_error(const rclcpp_lifecycle::State&)[m[K’:
+[14.574s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:81:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.575s]    81 |     [01;35m[Kconst rclcpp_lifecycle::State& previous_state[m[K)
+[14.576s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[14.847s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:[m[K In member function ‘[01m[Kvoid FHAC::radar_conti_ars408::publish_object_map()[m[K’:
+[14.848s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:428:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing Marker = struct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct visualization_msgs::msg::Marker_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kmesh[m[K’
+[14.849s]   428 |                 mEgoCar.[01;31m[Kmesh[m[K-resource= "file://"+ament_index_cpp::get_package_share_directory("husky")+/"husky_description/meshes/base_link.dae";
+[14.849s]       |                         [01;31m[K^~~~[m[K
+[14.860s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:428:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kresource[m[K’ was not declared in this scope
+[14.860s]   428 |                 mEgoCar.mesh-[01;31m[Kresource[m[K= "file://"+ament_index_cpp::get_package_share_directory("husky")+/"husky_description/meshes/base_link.dae";
+[14.860s]       |                              [01;31m[K^~~~~~~~[m[K
+[14.861s] [01m[K/home/offroad/radar_ws/src/radar_conti_ars408/src/src/radar_conti_ars408_component.cpp:428:104:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+[14.861s]   428 |                 mEgoCar.mesh-resource= "file://"+ament_index_cpp::get_package_share_directory("husky")+[01;31m[K/[m[K"husky_description/meshes/base_link.dae";
+[14.861s]       |                                                                                                        [01;31m[K^[m[K
+[21.539s] [ 50%] [32m[1mLinking CXX executable talker[0m
+[22.157s] [ 50%] Built target talker
+[22.792s] make[2]: *** [CMakeFiles/radar_conti_ars408_component.dir/build.make:63: CMakeFiles/radar_conti_ars408_component.dir/src/radar_conti_ars408_component.cpp.o] Error 1
+[22.793s] make[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/radar_conti_ars408_component.dir/all] Error 2
+[22.793s] make[1]: *** Waiting for unfinished jobs....
+[25.940s] [ 62%] [32m[1mLinking CXX executable listener[0m
+[26.561s] [ 62%] Built target listener
+[26.565s] make: *** [Makefile:141: all] Error 2
+[26.574s] Invoked command in '/home/offroad/radar_ws/src/build/radar_conti_ars408' returned '2': AMENT_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/offroad/radar_ws/src/install/ros2socketcan_bridge:/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/src/install/can_msgs:/home/offroad/radar_ws/install/ros2socketcan_bridge:/home/offroad/radar_ws/install/radar_conti_ars408:/home/offroad/radar_ws/install/cpp_srvcli:/home/offroad/radar_ws/install/radar_conti_ars408_msgs:/home/offroad/radar_ws/install/cpp_pubsub:/home/offroad/radar_ws/install/can_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib:/home/offroad/radar_ws/src/install/can_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/offroad/radar_ws/src/install/radar_conti_ars408_msgs/lib/python3.8/site-packages:/home/offroad/radar_ws/src/install/can_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/offroad/radar_ws/src/build/radar_conti_ars408 -- -j12 -l12

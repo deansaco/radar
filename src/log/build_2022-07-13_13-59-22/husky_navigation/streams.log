@@ -1,0 +1,35 @@
+[0.081s] Invoking command in '/home/offroad/radar_ws/src/build/husky_navigation': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_navigation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_navigation
+[0.320s] -- The C compiler identification is GNU 9.4.0
+[0.574s] -- The CXX compiler identification is GNU 9.4.0
+[0.596s] -- Check for working C compiler: /usr/bin/cc
+[0.996s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.008s] -- Detecting C compiler ABI info
+[1.461s] -- Detecting C compiler ABI info - done
+[1.530s] -- Detecting C compile features
+[1.532s] -- Detecting C compile features - done
+[1.546s] -- Check for working CXX compiler: /usr/bin/c++
+[2.111s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.122s] -- Detecting CXX compiler ABI info
+[2.617s] -- Detecting CXX compiler ABI info - done
+[2.696s] -- Detecting CXX compile features
+[2.697s] -- Detecting CXX compile features - done
+[2.744s] CMake Error at CMakeLists.txt:4 (find_package):
+[2.745s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.745s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.745s]   CMake did not find one.
+[2.746s] 
+[2.746s]   Could not find a package configuration file provided by "catkin" with any
+[2.746s]   of the following names:
+[2.746s] 
+[2.746s]     catkinConfig.cmake
+[2.746s]     catkin-config.cmake
+[2.746s] 
+[2.747s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.747s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.748s]   provides a separate development package or SDK, be sure it has been
+[2.750s]   installed.
+[2.753s] 
+[2.754s] 
+[2.754s] -- Configuring incomplete, errors occurred!
+[2.754s] See also "/home/offroad/radar_ws/src/build/husky_navigation/CMakeFiles/CMakeOutput.log".
+[2.771s] Invoked command in '/home/offroad/radar_ws/src/build/husky_navigation' returned '1': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_navigation -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_navigation

@@ -1,0 +1,34 @@
+[0.083s] Invoking command in '/home/offroad/radar_ws/src/build/husky_msgs': /usr/bin/cmake /home/offroad/radar_ws/src/husky/husky_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/offroad/radar_ws/src/install/husky_msgs
+[0.338s] -- The C compiler identification is GNU 9.4.0
+[0.658s] -- The CXX compiler identification is GNU 9.4.0
+[0.688s] -- Check for working C compiler: /usr/bin/cc
+[1.119s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.119s] -- Detecting C compiler ABI info
+[1.557s] -- Detecting C compiler ABI info - done
+[1.624s] -- Detecting C compile features
+[1.626s] -- Detecting C compile features - done
+[1.646s] -- Check for working CXX compiler: /usr/bin/c++
+[2.182s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.186s] -- Detecting CXX compiler ABI info
+[2.744s] -- Detecting CXX compiler ABI info - done
+[2.805s] -- Detecting CXX compile features
+[2.806s] -- Detecting CXX compile features - done
+[2.839s] CMake Error at CMakeLists.txt:4 (find_package):
+[2.843s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[2.844s]   asked CMake to find a package configuration file provided by "catkin", but
+[2.846s]   CMake did not find one.
+[2.848s] 
+[2.852s]   Could not find a package configuration file provided by "catkin" with any
+[2.853s]   of the following names:
+[2.853s] 
+[2.857s]     catkinConfig.cmake
+[2.860s]     catkin-config.cmake
+[2.868s] 
+[2.872s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[2.873s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[2.873s]   provides a separate development package or SDK, be sure it has been
+[2.873s]   installed.
+[2.873s] 
+[2.873s] 
+[2.874s] -- Configuring incomplete, errors occurred!
+[2.874s] See also "/home/offroad/radar_ws/src/build/husky_msgs/CMakeFiles/CMakeOutput.log".
